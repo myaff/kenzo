@@ -1,0 +1,234 @@
+$field-bg = #f0f0f0;
+$field-color = #949494;
+$field-bg--error = #ffe0d3;
+$field-color--error = #ff6521;
+.field {
+  @media $desktop {
+    margin-bottom: 1.25rem;
+    .modal & {
+      margin-bottom: 2rem;
+    }
+  }
+  @media $mobile {
+    margin-bottom: (60*100/750)vw;
+  }
+  &__label {
+    display: block;
+  }
+  &__input {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.625rem 1.5rem;
+    color: $field-color;
+    
+    font: normal 1.25rem/1.5 $font-base;
+    vertical-align: middle;
+    background: $field-bg;
+    border: 0;
+    
+    @media $mobile {
+      font-size: (38*100/750)vw;
+      line-height: 1;
+      padding: (21*100/750)vw (42*100/750)vw;
+    }
+    
+    {hover-focus-active} {
+      outline: 0;
+    }
+    
+    textarea& {
+      min-height: 150px;
+      @media $mobile {
+        min-height: (300*100/750)vw;
+      }
+    }
+    
+    .has-error & {
+      background: $field-bg--error;
+      color: $field-color--error;
+    }
+    
+  }
+  &__placeholder {
+    font: normal 1.25rem/1.5 $font-base;
+    vertical-align: middle;
+    absolute();
+    top: 0.625rem;
+    left: 1.5rem;
+    transition: opacity 0.3s, transform 0.3s;
+    cursor: text;
+    color: $field-color;
+    
+    
+    @media $mobile {
+      font-size: (38*100/750)vw;
+      line-height: 1.2;
+      top: (21*100/750)vw;
+      left: (42*100/750)vw;
+    }
+    
+    .has-focus &,
+    .has-value & {
+      opacity: 0;
+      transform: translateX(10%);
+    }
+  }
+  
+  &__clear {
+    color: inherit;
+    font-size: 12px;
+    padding: 6px;
+    
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    
+    absolute(0px);
+    right: 0;
+    
+    {hover-focus-active} {
+      box-shadow: none;
+      outline: none;
+    }
+    
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    
+    .has-value & {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+  
+  &__btn {
+    font-size: 2rem;
+    line-height: 1;
+    padding: 9px;
+    color: $black;
+    background: $secondary;
+    border: 0;
+    box-shadow: none;
+    
+    @media $mobile {
+      font-size: (50*100/750)vw;
+      padding: (30*100/750/2)vw;
+    }
+    
+    .icon {
+      display: block;
+    }
+    
+    {hover-focus-active} {
+      outline: 0;
+    }
+  }
+  
+  &--search {
+    flexy(flex-start, stretch);
+    margin-bottom: 0;
+  }
+  &--search &__label {
+    flex: 1 1 auto;
+  }
+  &--search &__btn {
+    flex: 0 0 50px;
+    @media $mobile {
+      flex-basis: (80*100/750)vw;
+    }
+  }
+  
+  &--checkbox,
+  &--radio {
+    & ^[0]__label {
+      flexy(flex-start, center);
+      cursor: pointer;
+    }
+    &.start ^[0]__label {
+      align-items: flex-start;
+      @media $mobile {
+        align-items: center;
+      }
+    }
+    
+    & ^[0]__input {
+      display: none;
+    }
+    & ^[0]__icon {
+      font-size: 1rem;
+      display: block;
+      opacity: 0;
+      transition: opacity 0.3s;
+      
+      @media $mobile {
+        font-size: (40*100/750)vw;
+      }
+    }
+    & ^[0]__input:checked ~ ^[0]__icon {
+      opacity: 1;
+    }
+    
+    & ^[0]__text {
+      font-size: 15px;
+      line-height: normal;
+      
+      @media $mobile {
+        font-size: (36*100/750)vw;
+      }
+    }
+  }
+  &__box {
+    flex: 0 0 30px;
+    size(30px);
+    margin-right: 1rem;
+    padding: 7px;
+    background: $field-bg;
+    color: $primary;
+    line-height: 1;
+    
+    @media $mobile {
+      flex-basis: (80*100/750)vw;
+      size((80*100/750)vw);
+      margin-right: (30*100/750)vw;
+      padding: (40*100/750/2)vw;
+    }
+  }
+  &--radio &__box {
+    border-radius: 50%;
+  }
+  
+  &__note {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 15px;
+    @medi $mobile {
+      font-size: (36*100/750)vw;
+    }
+  }
+  
+  &--inline {
+    @media $desktop {
+      flexy(flex-start, flex-start);
+      .field + .field {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.form {
+  &--inline {
+    flexy(flex-start, flex-end);
+  }
+  &--inline &__btn {
+    flex: 0 0 auto;
+  }
+  &--inline &__field {
+    flex: 1 1 auto;
+    margin-bottom: 1.25rem;
+    & + .form__field {
+      margin-left: 1.25rem;
+    }
+  }
+}

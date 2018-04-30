@@ -1,0 +1,113 @@
+.main-nav {
+  @media $mobile {
+    absolute((86*100/750)vw);
+    width: 100vw;
+    right: (-50*100/750)vw;
+    display: none;
+    max-height: calc(100vh - 16vw);
+    overflow-y: auto;
+    box-shadow: 0 50vh 0 50vh rgba($black, 0.5);
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    relative();
+    @media $mobile {
+      background: $primary;
+      padding: 0 (50*100/750)vw (35*100/750)vw;
+      z-index: 1;
+    }
+    @media $desktop {
+      flexy(space-between, center);
+      margin: 0 -15px;
+    }
+  }
+  &__item {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    @media $mobile {
+      border-bottom: (6*100/750)vw solid #f02222;
+      
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    color: $white;
+    font: bold 15px/1 $font-base;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 1em 7px;
+    white-space: nowrap;
+    
+    @media $desktop {
+      text-align: center;
+      &:hover {
+        color: $white;
+      }
+    }
+    @media $mobile {
+      font-size: (40*100/750)vw;
+      padding: (30*100/750)vw 0;
+    }
+    {hover-focus-active} {
+      color: $white;
+    }
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+}
+
+.main-nav-btn {
+  @media $desktop {
+    display: none;
+  }
+  size((60*100/750)vw, (53*100/750)vw);
+  div {
+    absolute(50%, 0px);
+    size(100%, (7*100/750)vw);
+    margin-top: (-3.5*100/750)vw;
+    border-radius: (4*100/750)vw;
+    background: $white;
+    transform-origin: center;
+    transition: transform 0.3s;
+    
+    &:first-child {
+      transform: translateY((-23*100/750)vw);
+      
+      .is-open & {
+        transform: rotate(45deg);
+      }
+    }
+    &:last-child {
+      transform: translateY((23*100/750)vw);
+      .is-open & {
+        transform: rotate(-45deg);
+      }
+    }
+    
+    &:nth-child(2) {
+      .is-open & {
+        transform: scaleX(0);
+      }
+    }
+  }
+  &.is-open div {
+    &:first-child {
+      transform: rotate(45deg);
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+    
+    &:nth-child(2) {
+      transform: scaleX(0);
+    }
+  }
+}

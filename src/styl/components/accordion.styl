@@ -1,0 +1,91 @@
+.accordion {
+  box-shadow: 0 0 20px rgba($black, 0.15);
+  background: $white;
+  @media $mobile {
+    width: 100vw;
+    margin: 0 calc((100vw - 100%) / -2);
+  }
+  &__header {
+    flexy(flex-start, stretch);
+    color: $primary;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    ^[0].is-open & {
+      background: $secondary-darker;
+      color: $white;
+    }
+    
+    @media $mobile {
+      align-items: center;
+    }
+  
+    &-q {
+      flexy(center, center);
+      flex: 0 0 97px;
+      background: $secondary;
+      color: $white;
+      font-size: 2.5rem;
+      line-height: 1;
+      padding: 1.5rem;
+      text-align: center;
+      @media $mobile {
+        display: none;
+      }
+    }
+    &-carret {
+      flex: 0 0 97px;
+      font-size: 30px;
+      line-height: 1;
+      padding: 2rem;
+      
+      @media $mobile {
+        font-size: (60*100/750)vw;
+        padding: (50*100/750)vw;
+        padding-left: (10*100/750)vw;
+        flex-basis: (120*100/750)vw;
+      }
+      
+      .icon {
+        transform-origin: center;
+        transition: transform 0.3s;
+        
+        &.icon--stroked {
+          stroke-width: 100;
+        }
+        
+        ^[0].is-open & {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    &-text {
+      flex: 1 1 auto;
+      padding: 35px 2.5rem;
+      font: bold 22px/25px $font-base;
+      text-transform: uppercase;
+      span {
+        vertical-align: middle;
+      }
+      
+      @media $mobile {
+        font-size: (40*100/750)vw;
+        line-height: 1.38;
+        padding: (25*100/750)vw 0;
+        padding-left: (40*100/750)vw;
+      }
+    }
+  }
+  
+  &__body {
+    display: none;
+  }
+  
+  &__content {
+    padding: 2.5rem 3.5rem;
+    font: 1.25rem/1.2 $font-base;
+    @media $mobile {
+      font-size: (36*100/750)vw;
+      padding: (32*100/750)vw (40*100/750)vw;
+    }
+  }
+}

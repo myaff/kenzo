@@ -1,0 +1,106 @@
+.home-section {
+  padding: 100px 0 130px;
+  @media $lgHeight {
+    padding: 11vh 0 calc(100vh - 11vh - 570px);
+  }
+  @media $xsWidth {
+    padding: 0 0 20px;
+  }
+  @media $xsHeight {
+    padding: 0 0 20px;
+  }
+  &__link {
+    display: block;
+  }
+  &__imgs {
+    flexy(center, center);
+  }
+  &__img {
+    transition: transform 0.4s;
+    img {
+      display: block;
+      @media $mdHeight {
+        size(auto, calc(100vh - 100px - 130px));
+      }
+      @media $xsWidth {
+        size(auto, calc(100vh - 70px - 100px));
+      }
+      @media $xsHeight {
+        size(100%, auto);
+      }
+    }
+    &::after {
+      content: '';
+      display: block;
+      absolute(0px, 0px);
+      size(100%);
+      background: rgba(#071f22, 0.6);
+      opacity: 0;
+      transition: opacity 0.8s 0.2s;
+      ^[0]__link:hover & {
+        opacity: 1;
+      }
+    }
+    &--1 {
+      z-index: 2;
+    }
+    &--2,
+    &--3 {
+      z-index: 1;
+      img {
+        @media $mdHeight {
+          height: calc(100vh - 100px - 130px - 150px);
+        }
+      }
+      @media $smWidth {
+        display: none;
+      }
+    }
+    &--2 {
+      order: -1;
+      ^[0]__link:hover & {
+        transform: translateX(120px);
+      }
+    }
+    &--3 {
+      order: 1;
+      ^[0]__link:hover & {
+        transform: translateX(-120px);
+      }
+    }
+  }
+  &__content {
+    absolute(0, 0px);
+    top: calc((100vh - 100px) / 2);
+    width: 100%;
+    z-index: 3;
+    @media $lgHeight {
+      top: 380px;
+    }
+  }
+  &__text {
+    font: 500 50px/1 $font-base;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.1em;
+    @media $mdWidth {
+      font-size: 4vw;
+    }
+  }
+  &__icon {
+    font-size: 30px;
+    margin-top: 7.5vh;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.2s 0.3s, transform 0.5s 0.3s;
+    @media $lgHeight {
+      margin-top: 60px;
+    }
+    ^[0]__link:hover & {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

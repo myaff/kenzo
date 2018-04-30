@@ -1,0 +1,75 @@
+.header {
+  fixed(0px, 0px);
+  width: 100vw;
+  z-index: 9;
+  background: transparent;
+  color: white;
+  
+  .layout & {
+    width: 100vw;
+  }
+  
+  &__content {
+    padding: 20px 0;
+    flexy(space-between, center);
+  }
+  
+  &__text {
+    font: 14px/1 $font-base;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    @media $xsWidth {
+      display: none;
+    }
+    @media $xsHeight {
+      display: none;
+    }
+  }
+  
+  &__nav,
+  &__logo {
+    flex: 0 0 185px;
+    @media $msWidth {
+      flex-basis: 25vw;
+    }
+    @media $xsWidth {
+      flex-basis: 130px;
+    }
+  }
+  
+  &__logo {
+    size(185px, 30px);
+    @media $msWidth {
+      width: 25vw;
+    }
+    @media $xsWidth {
+      width: 130px;
+    }
+    
+    .icon {
+      display: block;
+      size(100%);
+    }
+  }
+  
+}
+
+.btn-menu {
+  display: block;
+  size(50px, 29px);
+  padding: 7px 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  
+  {hover-focus-active} {
+    color: inherit;
+    outline: 0;
+  }
+  
+  .icon {
+    display: block;
+    size(100%);
+  }
+}

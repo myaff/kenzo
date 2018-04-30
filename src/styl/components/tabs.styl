@@ -1,0 +1,51 @@
+.tabs {
+  &__header {
+    flexy(center, center);
+    margin-bottom: 3rem;
+    @media $mobile {
+      width: 100vw;
+      margin: 0 calc((100vw - 100%) / -2) (60*100/750)vw;
+    }
+    
+    .tab {
+      flex: 0 0 215px;
+      text-align: center;
+      border: 1px solid $gray.border;
+      border-right-width: 0;
+      font-size: 18px;
+      line-height: 1;
+      text-transform: uppercase;
+      padding: 15px;
+      color: $primary;
+      transition: all 0.3s;
+      cursor: pointer;
+      
+      &:last-child {
+        border-right-width: 1px;
+      }
+      
+      &.is-active {
+        box-shadow: 0 0 20px rgba($black, 0.15);
+        font-weight: bold;
+        border-color: transparent;
+        
+        & + .tab {
+          border-left-color: transparent;
+        }
+      }
+      
+      
+      @media $mobile {
+        flex: 1 1 auto;
+        font-size: (36*100/750)vw;
+        padding: (40*100/750)vw (20*100/750)vw;
+      }
+    }
+  }
+  
+  &__body {
+    .tab-content {
+      display: none;
+    }
+  }
+}

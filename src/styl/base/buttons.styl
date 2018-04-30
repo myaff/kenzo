@@ -1,0 +1,111 @@
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  padding: 17px 2rem 13px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  box-shadow: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  
+  {hover-focus-acitve} {
+    outline: 0;
+  }
+  
+  @media $mobile {
+    font-size: (40*100/750)vw;
+    padding: (34*100/750)vw;
+  }
+  
+  // **** sizes ****
+  &--small {
+    font-size: 15px;
+    padding: 11px 2rem 12px;
+    min-width: 160px;
+  }
+  &--big {
+    padding: 20px;
+  }
+  
+  // **** themes  ****
+  &--primary {
+    color: $white;
+    background: $primary;
+    border-color: transparent;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: darken($primary, 20%);
+      border-color: transparent;
+    }
+  }
+  &--secondary {
+    color: $black;
+    background: $secondary;
+    border-color: transparent;
+    
+    {hover-focus-active} {
+      color: $black;
+      background: darken($secondary, 20%);
+      border-color: transparent;
+    }
+  }
+  &--primary-outline {
+    color: $primary;
+    background: transparent;
+    border-color: $primary;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: $primary;
+    }
+  }
+  &--secondary-outline {
+    color: $black;
+    background: transparent;
+    border-color: $black;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: $black;
+    }
+  }
+  
+  &--plain {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 14px;
+    min-width: 0;
+    
+    background: transparent;
+    color: inherit;
+  }
+  
+  &--block {
+    display: block;
+    width: 100%;
+  }
+  
+  &--mwide {
+    @media $mobile {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  &--link {
+    font-weight: normal;
+    font-size: inherit;
+    color: $primary;
+    text-transform: none;
+    padding: 0;
+    background: none;
+  }
+}

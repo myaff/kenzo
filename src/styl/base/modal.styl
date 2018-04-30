@@ -1,0 +1,133 @@
+.modal {
+  width: 100%;
+  background: $white;
+  absolute(50%, 50%);
+  transform: translate(-50%, -50%);
+  max-height: 100vh;
+  overflow-y: auto;
+  display: none;
+  @media $mobile {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  @media $desktop {
+    &--small {
+      max-width: 480px;
+    }
+    &--medium {
+      max-width: 650px;
+    }
+    &--big {
+      max-width: 820px;
+    }
+    &--large {
+      max-width: 990px;
+    }
+  }
+  &__wrapper {
+    fixed(0px, 0px);
+    size(100vw, 100%);
+    z-index: 99;
+    display: none;
+    background: rgba($black, 0.5);
+    .layout & {
+       width: 100vw;
+    }
+  }
+  &__close {
+    absolute(0px);
+    right: 0;
+    z-index: 5;
+    size(70px);
+    padding: 25px;
+    color: $primary;
+  }
+  &__inner {
+    @media $desktop {
+      flexy(center, center);
+      ^[0]--medium & {
+        min-height: 370px;
+      }
+    }
+  }
+  &__content {
+    width: 100%;
+    padding: 80px 80px 86px;
+    @media $mobile {
+      padding: (120*100/750)vw (50*100/750)vw (140*100/750)vw;
+    }
+    ^[0]--video & {
+      padding: 0;
+    }
+  }
+  &__title + div {
+    margin-top: 2rem;
+    @media $mobile {
+      margin-top: (50*100/750)vw;
+    }
+  }
+  &__title + &__text {
+    margin: 1rem auto 2rem;
+    @media $mobile {
+      margin: (50*100/750)vw 0;
+    }
+    @media $desktop {
+      max-width: 400px;
+    }
+  }
+  &__note {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 15px;
+    @medi $mobile {
+      font-size: (36*100/750)vw;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 1.2;
+    @media $mobile {
+      font-size: (36*100/750)vw;
+    }
+  }
+}
+
+.modal-form {
+  &__heading {
+    .title,
+    .subtitle {
+      text-align: center;
+    }
+  }
+  &__form {
+    transition: opacity 0.3s;
+    .is-submitted & {
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+  &__form &__heading {
+    margin-bottom: 40px;
+    .title {
+      line-height: 0.7;
+    }
+    .subtitle {
+      margin-top: 0px;
+    }
+  }
+  &__result {
+    display: none;
+    absolute(0px, 0px);
+    size(100%);
+  }
+  &__result &__heading {
+    margin: 80px auto;
+    .subtitle {
+      margin-top: 10px;
+    }
+  }
+  &__actions {
+    text-align: center;
+  }
+}
