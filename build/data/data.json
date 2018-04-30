@@ -4,30 +4,45 @@
     "text": "Вода в&nbsp;искусстве",
     "url": "#",
     "images": [
+      "build/img/screen-1_img-1.jpg",
+      "build/img/screen-1_img-2.jpg",
+      "build/img/screen-1_img-3.jpg"
     ]
   },
   {
     "text": "Вода в&nbsp;модных трендах",
     "url": "#",
     "images": [
+      "build/img/screen-2_img-1.jpg",
+      "build/img/screen-2_img-2.jpg",
+      "build/img/screen-2_img-3.jpg"
     ]
   },
   {
     "text": "Вода в&nbsp;спорте",
     "url": "#",
     "images": [
+      "build/img/screen-3_img-1.jpg",
+      "build/img/screen-3_img-2.jpg",
+      "build/img/screen-3_img-3.jpg"
     ]
   },
   {
     "text": "Вода в&nbsp;нашей жизни",
     "url": "#",
     "images": [
+      "build/img/screen-4_img-1.jpg",
+      "build/img/screen-4_img-2.jpg",
+      "build/img/screen-4_img-3.jpg"
     ]
   },
   {
     "text": "Новый аромат от&nbsp;KENZO",
     "url": "#",
     "images": [
+      "build/img/screen-5_img-1.jpg",
+      "build/img/screen-5_img-2.jpg",
+      "build/img/screen-5_img-3.jpg"
     ]
   }
 ]
