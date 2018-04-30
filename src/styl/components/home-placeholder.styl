@@ -1,0 +1,44 @@
+.home-placeholder {
+  fixed(0px, 0px);
+  size(100%);
+  z-index: 999;
+  background: url('../img/placeholder.jpg') center no-repeat;
+  color: white;
+  &__inner {
+    size(100%);
+    flexy(center, center);
+    overflow-y: auto;
+  }
+  &__content {
+    width: 100%;
+    max-width: 730px;
+    margin: auto;
+    text-align: center;
+    padding: 10vw;
+  }
+  &__title {
+    font: 500 12px $font-base;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    @media $xsWidth {
+      margin-bottom: 10vw;
+    }
+  }
+  &__text {
+    font: 300 30px/1.17 $font-base;
+    letter-spacing: 0.1em;
+    margin: 40px auto;
+    @media $xsWidth {
+      margin: 10vw auto;
+      font-size: 1.5rem;
+    }
+  }
+  &__btn {
+    margin-top: 130px;
+    
+    @media $xsWidth {
+      margin-top: 10vw;
+    }
+  }
+}

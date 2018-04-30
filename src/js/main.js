@@ -7,6 +7,7 @@ let Accordion = require("./components/accordion");
 let Tabs = require("./components/tabs");
 let MainMenu = require("./components/main-menu");
 let Video = require("./components/video");
+let Animation = require("./components/animation");
 
 $(document).ready(function(){
   
@@ -19,6 +20,21 @@ $(document).ready(function(){
   Tabs.init();
   //MainMenu.init();
   Video.init();
+  
+  $('html').addClass('is-animating');
+  
+  if ($('.page').hasClass('page--home')) {
+    $('html, body').css('overflow-y', 'hidden');
+    $('.js-placeholder').on('click', function(){
+      $('html, body').css('overflow-y', '');
+      Animation.init();
+      $(this).closest('.home-placeholder').fadeOut(500);
+      $('.a-anim-text').addClass('animate');
+    });
+  } else {
+    Animation.init();
+  }
+  
 });
 
 

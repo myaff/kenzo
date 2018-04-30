@@ -10,8 +10,18 @@
       opacity: 0.15;
       text-align: center;
       text-transform: uppercase;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.5s 0.5s;
+      
+      &.animate {
+        transform: scaleX(1);
+      }
       @media $mdHeight {
-        transform: translateY(-50%);
+        transform: translateY(-50%) scaleX(0);
+        &.animate {
+          transform: translateY(-50%) scaleX(1);
+        }
       }
       @media $lgHeight {
         top: 340px;
@@ -19,6 +29,7 @@
       @media $mdWidth {
         font-size: 14vw;
       }
+      
     }
     & ^[0]__sections {
       @media $xsWidth {

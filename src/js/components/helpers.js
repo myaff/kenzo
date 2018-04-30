@@ -161,6 +161,13 @@ function init(){
     }
   });
   
+  $(window).scroll($.debounce(250, true, function() {
+    $('html').addClass('is-scrolling');
+  }));
+  $(window).scroll($.debounce(250, function() {
+    $('html').removeClass('is-scrolling');
+  }));
+  
 }
 
 module.exports = {init, toggleClassIf, toggleElementClassOnScroll};

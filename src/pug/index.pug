@@ -6,12 +6,12 @@ prepend page
 
 block content
   .page.page--home
-    .page__main-text Aqua Kenzo
+    .page__main-text.a-anim-text Aqua Kenzo
     .l-container
       .page__sections
         each item, index in homeScreens
-          .home-section(class="home-section--" + (index + 1))
-            a.home-section__link(href=item.url)
+          .home-section.a-scroll-box(class="home-section--" + (index + 1))
+            a.home-section__link.js-hover(href=item.url)
               .home-section__imgs
                 each imgSrc, c in item.images
                   .home-section__img(class="home-section__img--" + (c + 1)): img(src=imgSrc, alt="")
@@ -21,4 +21,11 @@ block content
                   +icon('arrow-right')
       .page__section-indicators
         each item, index in homeScreens
-          .indicator(class="indicator--" + (index + 1))
+          .indicator.a-indicator(class="indicator--" + (index + 1))
+    .home-placeholder
+      .home-placeholder__inner
+        .home-placeholder__content
+          .home-placeholder__title специальный проект
+          .home-placeholder__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          .home-placeholder__btn
+            button.btn.js-placeholder войти

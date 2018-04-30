@@ -14,6 +14,7 @@ block page
         link(href="build/css/main.css", rel="stylesheet")
         //- link(rel="icon" type="image/png" href="favicons.png" sizes="16x16")
         script(src="build/js/vendor/jquery-3.2.1.min.js")
+        script(src="build/js/vendor/jquery.ba-throttle-debounce.js")
         script(src="build/img/svg/sprite.js")
     body
       .svg-sprite.l-hidden
@@ -24,4 +25,8 @@ block page
         block content
         include parts/footer
       
+      script(src="build/js/vendor/TweenMax.min.js")
+      script(src="build/js/vendor/ScrollToPlugin.min.js")
+      script(src="build/js/vendor/ScrollMagic.min.js")
+      script(src="build/js/vendor/animation.gsap.min.js")
       script(src="build/js/main.js")

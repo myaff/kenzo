@@ -11,12 +11,19 @@
   }
   &__link {
     display: block;
+    
+    .is-animating & {
+      pointer-events: none;
+    }
+    .is-animating .animate & {
+      pointer-events: initial;
+    }
   }
   &__imgs {
     flexy(center, center);
   }
   &__img {
-    transition: transform 0.4s;
+    
     img {
       display: block;
       @media $mdHeight {
@@ -37,12 +44,32 @@
       background: rgba(#071f22, 0.6);
       opacity: 0;
       transition: opacity 0.8s 0.2s;
-      ^[0]__link:hover & {
+      .is-animating .animate ^[0]__link.a-enter & {
         opacity: 1;
       }
     }
     &--1 {
       z-index: 2;
+      .is-animating & {
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: transform 0.4s 0.8s;
+        @media $smWidth {
+          transform: translateY(20%);
+          opacity: 0;
+          transition: opacity 0.3s, transform 0.5s;
+        }
+      }
+      .is-animating .animate & {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+        transition: transform 0.4s 0s;
+        @media $smWidth {
+          transform: translateY(0);
+          opacity: 1;
+          transition: opacity 0.3s, transform 0.5s;
+        }
+      }
     }
     &--2,
     &--3 {
@@ -58,14 +85,44 @@
     }
     &--2 {
       order: -1;
-      ^[0]__link:hover & {
+      .is-animating & {
+        transform: translateX(100%);
+        opacity: 0;
+        transition: opacity 0.1s 0.6s, transform 0.5s 0.3s;
+      }
+      .is-animating .animate & {
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.1s 0.2s, transform 0.5s 0.3s;
+      }
+      .is-animating .animate ^[0]__link.a-enter & {
         transform: translateX(120px);
+        transition: transform 0.3s 0s;
+      }
+      .is-animating .animate ^[0]__link.a-leave & {
+        transform: translateX(0);
+        transition: transform 0.3s 0s;
       }
     }
     &--3 {
       order: 1;
-      ^[0]__link:hover & {
+      .is-animating & {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: opacity 0.1s 0.3s, transform 0.5s;
+      }
+      .is-animating .animate & {
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.1s 0.6s, transform 0.5s 0.6s;
+      }
+      .is-animating .animate ^[0]__link.a-enter & {
         transform: translateX(-120px);
+        transition: transform 0.3s 0s;
+      }
+      .is-animating .animate ^[0]__link.a-leave & {
+        transform: translateX(0);
+        transition: transform 0.3s 0s;
       }
     }
   }
@@ -86,6 +143,16 @@
     @media $mdWidth {
       font-size: 4vw;
     }
+    .is-animating & {
+      transform: translateY(50%);
+      opacity: 0;
+      transition: transform 0.5s, opacity 0.3s;
+    }
+    .is-animating .animate & {
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform 0.5s, opacity 0.3s;
+    }
   }
   &__icon {
     font-size: 30px;
@@ -98,7 +165,7 @@
     @media $lgHeight {
       margin-top: 60px;
     }
-    ^[0]__link:hover & {
+    .is-animating .animate ^[0]__link.a-enter & {
       opacity: 1;
       transform: translateX(0);
     }
