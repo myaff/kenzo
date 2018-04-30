@@ -46,9 +46,15 @@ body {
   > div {
     width: 100%;
     flex: 0 0 auto;
+    
+    opacity: 0;
+    .is-loaded & {
+      opacity: 1;
+    }
   }
   .page {
     flex-grow: 1;
+    opacity: 1;
   }
 }
 

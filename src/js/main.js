@@ -21,12 +21,17 @@ $(document).ready(function(){
   //MainMenu.init();
   Video.init();
   
+  $.afterlag(function(){
+    $('html').addClass('is-loaded');
+  });
+  
   $('html').addClass('is-animating');
   
   if ($('.page').hasClass('page--home')) {
     $('html, body').css('overflow-y', 'hidden');
     $('.js-placeholder').on('click', function(){
       $('html, body').css('overflow-y', '');
+      $('html').addClass('is-loaded');
       Animation.init();
       $(this).closest('.home-placeholder').fadeOut(500);
       $('.a-anim-text').addClass('animate');

@@ -1,6 +1,6 @@
 .home-placeholder {
   fixed(0px, 0px);
-  size(100%);
+  size(100vw, 100%);
   z-index: 999;
   background: url('../img/placeholder.jpg') center no-repeat;
   color: white;
@@ -14,7 +14,10 @@
     max-width: 730px;
     margin: auto;
     text-align: center;
-    padding: 10vw;
+    padding: 40px;
+    @media $xsWidth {
+      padding: 40px 20px;
+    }
   }
   &__title {
     font: 500 12px $font-base;
@@ -36,7 +39,9 @@
   }
   &__btn {
     margin-top: 130px;
-    
+    @media $mdHeight {
+      margin-top: 10vh;
+    }
     @media $xsWidth {
       margin-top: 10vw;
     }
