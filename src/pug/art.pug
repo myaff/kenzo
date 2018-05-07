@@ -1,0 +1,36 @@
+extends template
+
+prepend page
+  - var layout = 'detail';
+  - var currentPage = 'art';
+
+block content
+  - var $page = pages[currentPage];
+  .page.page--detail(class="page--" + currentPage)
+    .start-screen
+      .l-container
+        .start-screen__inner
+          +navMenu(mainNav).start-screen__nav
+          .start-screen__content
+            .l-flex-center-noBottom
+              .l-col-10_sm-12
+                .start-screen__title !{$page.start.title}
+              .l-col-8_sm-12
+                .start-screen__text !{$page.start.text}
+    .page-sections
+      each item, index in $page.screens
+        .detail-section.a-parallax-box(class="detail-section--" + (index + 1))
+          .l-container
+            .detail-section__title !{item.title}
+            .detail-section__texts
+              .l-flex-center-noBottom
+                each sectionText in item.text
+                  .l-col-6_sm-12
+                    .detail-section__text !{sectionText}
+            .detail-section__imgs
+              each itemImg, imgIndex in item.imgs
+                .detail-section__img(class="detail-section__img--" + (imgIndex + 1), class=itemImg.animClass)
+                  img(src=itemImg.src, alt="")
+                  if itemImg.wave
+                    .js-wave-wrapper(data-img=itemImg.src)
+                      canvas.js-wave(id="wave-" + (index + 1) + "-" + (imgIndex + 1))

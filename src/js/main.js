@@ -8,6 +8,7 @@ let Tabs = require("./components/tabs");
 let MainMenu = require("./components/main-menu");
 let Video = require("./components/video");
 let Animation = require("./components/animation");
+let Share = require("./components/share");
 
 $(document).ready(function(){
   
@@ -20,6 +21,7 @@ $(document).ready(function(){
   Tabs.init();
   //MainMenu.init();
   Video.init();
+  Share.init();
   
   $.afterlag(function(){
     $('html').addClass('is-loaded');
@@ -57,5 +59,6 @@ module.exports = {
   Accordion,
   Tabs,
   MainMenu,
-  Video
+  Video,
+  Share
 };

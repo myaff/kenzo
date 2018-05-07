@@ -47,9 +47,11 @@ body {
     width: 100%;
     flex: 0 0 auto;
     
-    opacity: 0;
-    .is-loaded & {
-      opacity: 1;
+    ^[0]--home & {
+      opacity: 0;
+      .is-loaded & {
+        opacity: 1;
+      }
     }
   }
   .page {

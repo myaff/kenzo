@@ -1,0 +1,58 @@
+.page {
+  &--detail {
+    padding-top: 0;
+    .start-screen {
+      size(100%, 100vh);
+      background: url('../img/placeholder.jpg') center no-repeat;
+      background-size: cover;
+      padding: (110*100/950)vh 0;
+      color: white;
+      text-align: center;
+      
+      &__nav {
+        margin-bottom: (100*100/950)vh;
+      }
+      
+      &__title {
+        font: 300 (90*100/950)vh/1.11 $font-util;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+      }
+      
+      &__text {
+        font: 22px/1.45 $font-base;
+        letter-spacing: 0.02em;
+        margin-top: (50*100/950)vh;
+      }
+    }
+    
+    .detail-section {
+      padding: 5rem 0 2.5rem;
+      color: white;
+      
+      &__title {
+        font: 600 50px/1 $font-base;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      
+      &__text {
+        font: 22px/1.45 $font-base;
+        letter-spacing: 0.02em;
+        margin-bottom: 3rem;
+      }
+      
+      &__imgs {
+        display: flex;
+        .js-wave-wrapper {
+          absolute(0px, 0px);
+          size(100%);
+        }
+        .js-wave {
+          size(100%);
+        }
+      }
+    }
+  }
+}

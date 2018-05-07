@@ -2,6 +2,9 @@ include ../mixins
 .footer
   .l-container-fluid
     .footer__content
-      .footer__text МАТЕРИАЛ ПОДГОТОВЛЕН ПРИ ПОДДЕРЖКЕ
+      if layout == 'detail'
+        +social(false, false).footer__social
+        +navMenu(mainNav).footer__nav
+      .footer__text Материал подготовлен при поддержке
       .footer__logo
         +icon('kenzo')

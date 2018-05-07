@@ -1,8 +1,40 @@
 {
+"mainNav": [
+  {
+    "title": "Вода в&nbsp;искусстве",
+    "url": "art.html",
+    "isActive": true
+  },
+  {
+    "title": "Вода в&nbsp;бьюти",
+    "url": "beauty.html",
+    "isActive": false
+  },
+  {
+    "title": "Вода и&nbsp;спорт",
+    "url": "sport.html",
+    "isActive": false
+  },
+  {
+    "title": "Вода в&nbsp;нашей жизни",
+    "url": "life.html",
+    "isActive": true
+  },
+  {
+    "title": "Вода в&nbsp;моде",
+    "url": "fashion.html",
+    "isActive": true
+  },
+  {
+    "title": "Aqua Kenzo",
+    "url": "aqua-kenzo.html",
+    "isActive": false
+  }
+],
 "homeScreens": [
   {
     "text": "Вода в&nbsp;искусстве",
-    "url": "#",
+    "url": "art.html",
     "images": [
       "build/img/screen-1_img-1.jpg",
       "build/img/screen-1_img-2.jpg",
@@ -11,7 +43,7 @@
   },
   {
     "text": "Вода в&nbsp;модных трендах",
-    "url": "#",
+    "url": "fashion.html",
     "images": [
       "build/img/screen-2_img-1.jpg",
       "build/img/screen-2_img-2.jpg",
@@ -20,7 +52,7 @@
   },
   {
     "text": "Вода в&nbsp;спорте",
-    "url": "#",
+    "url": "sport.html",
     "images": [
       "build/img/screen-3_img-1.jpg",
       "build/img/screen-3_img-2.jpg",
@@ -29,7 +61,7 @@
   },
   {
     "text": "Вода в&nbsp;нашей жизни",
-    "url": "#",
+    "url": "life.html",
     "images": [
       "build/img/screen-4_img-1.jpg",
       "build/img/screen-4_img-2.jpg",
@@ -38,12 +70,182 @@
   },
   {
     "text": "Новый аромат от&nbsp;KENZO",
-    "url": "#",
+    "url": "aqua-kenzo.html",
     "images": [
       "build/img/screen-5_img-1.jpg",
       "build/img/screen-5_img-2.jpg",
       "build/img/screen-5_img-3.jpg"
     ]
   }
-]
+],
+"pages": {
+  "art": {
+    "start": {
+      "title": "вода в&nbsp;искусстве",
+      "text": "<p>На&nbsp;воду можно смотреть бесконечно&nbsp;&mdash; как живая, она дрожит во&nbsp;время дождя, гневится при сильном ветре, исходит пеной, сбегая с&nbsp;гор. Даже в&nbsp;простом стакане каждый видит ее&nbsp;по-своему. Именно поэтому тема воды в&nbsp;искусстве неисчерпаема&nbsp;&mdash; мы&nbsp;нашли четверых интересных художников, которые рассуждают о&nbsp;воде с&nbsp;пристрастием.</p>"
+    },
+    "screens": [
+      {
+        "title": "Водные фантазии",
+        "text": [
+          "<p>Немецкая художница Moki Mioke рисует мир своих фантазий на&nbsp;тему природы и&nbsp;человека. Как правило, в&nbsp;ее&nbsp;работах одно становится частью другого: деревья, купаются в&nbsp;реке, как лесные нимфы, а&nbsp;девочка спит в&nbsp;кровати-бухте, укрывшись морской волной, будто пуховым одеялом.</p>",
+          "<p>В&nbsp;отношении к&nbsp;цивилизации Moki Mioke категорична и&nbsp;считает, что в&nbsp;ней нет ничего хорошего. Вода&nbsp;&mdash; один из&nbsp;ключевых мотивов в&nbsp;ее&nbsp;творчестве: герои картин живут в&nbsp;гармонии со&nbsp;стихией, уважают ее&nbsp;и&nbsp;относятся к&nbsp;ней как к&nbsp;равной.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/art/1-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/art/1-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/art/1-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Айсберги, которые не&nbsp;тают",
+        "text": [
+          "<p>Американка Зария Форман пишет кончи- ками пальцев пейзажи Гренландии&nbsp;&mdash; однажды она совершила экспедицию к&nbsp;берегам острова, привезла из&nbsp;нее тысячи фотографий нетронутого ландшафта и&nbsp;теперь повторяет их&nbsp;в&nbsp;живописи. Выглядит удивительно и&nbsp;абсолютно реалистично.</p>",
+          "<p>Зария не&nbsp;просто восхищается красотой плавающих в&nbsp;Ледовитом океане глыб, а&nbsp;привлекает своим творчеством внимание к&nbsp;проблеме глобального потепления&nbsp;&mdash; часть средств, вырученных от&nbsp;продаж полотен, художница перечисляет на&nbsp;защиту природы.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/art/2-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/art/2-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/art/2-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Водопады <br/>в&nbsp;каменных джунглях",
+        "text": [
+          "<p>В&nbsp;центре американского города Форт&#8209;Уэрт (штат Техас) еще в&nbsp;1970&#8209;х появился футу- ристичный парк, целиком посвященный воде&nbsp;&mdash; его так и&nbsp;называют Водяные сады Форта-Уэрта. Знаменитый архитектор Филип Джонсон создал его, чтобы у&nbsp;каждого жителя каменных джунглей был шанс прикоснуться к&nbsp;природе.</p>",
+          "<p>Одной из&nbsp;самых красивых зон считается глубокий бассейн, в&nbsp;который с&nbsp;высоких 11-метровых стен падает вода. Сюда приходят насладиться красотой водной стихии, расслабиться, слушая ее&nbsp;шум, или освежиться в&nbsp;жаркий полдень. Кроме того, водяные сады привлекают в&nbsp;индустриаль- ный центр Техаса множество туристов.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/art/3-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/art/3-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/art/3-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Вода и&nbsp;природа человека",
+        "text": [
+          "<p>Оскароносный фильм голливудского сказочника Гильермо дель Торо &laquo;Форма воды&raquo; рассказывает историю из&nbsp;жизни немой уборщицы Элизы, которая влюби- лась в&nbsp;человека-амфибию, оказавшегося в&nbsp;плену научной лаборатории. Ванная комната становится для двоих влюблен- ных океаном, а&nbsp;водный канал в&nbsp;городе &mdash;</p>",
+          "<p>путем к&nbsp;спасению и&nbsp;свободе. Картина, конечно, о&nbsp;любви, но&nbsp;еще и&nbsp;о&nbsp;том, что человек счастлив только в&nbsp;своей естественной среде, и&nbsp;для главных героев это вода.</p><p>А&nbsp;для вас? Баюкающие волны, соленый прибой и&nbsp;брызги на&nbsp;коже вызывают эйфорию&nbsp;и... зависимость.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/art/4-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/art/4-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/art/4-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      }
+    ]
+  },
+  "life": {
+    "start": {
+      "title": "Вода в&nbsp;нашей <br/>жизни",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer</p>"
+    },
+    "screens": [
+      {
+        "title": "Как правильно пить воду",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/life/1-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/life/1-2.jpg", "wave": true, "animClass": ""},
+          {"src": "build/img/life/1-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Термальная вода для&nbsp;кожи",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/life/2-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/life/2-2.jpg", "wave": true, "animClass": ""},
+          {"src": "build/img/life/2-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Водные процедуры",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/life/3-1.jpg", "wave": true, "animClass": "a-parallax-left"},
+          {"src": "build/img/life/3-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/life/3-3.jpg", "wave": true, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Наносим аромат Kenzo Aqua",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/life/4-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/life/4-2.gif", "wave": false, "animClass": ""},
+          {"src": "build/img/life/4-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      }
+    ]
+  },
+  "fashion": {
+    "start": {
+      "title": "вода <br/>в&nbsp;моде",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer</p>"
+    },
+    "screens": [
+      {
+        "title": "Купальники <br/>как&nbsp;верхняя одежда",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/fashion/1-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/fashion/1-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/fashion/1-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Тропические принты",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/fashion/2-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/fashion/2-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/fashion/2-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Свитшот с&nbsp;морскими мотивами",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/fashion/3-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/fashion/3-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/fashion/3-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Аксессуары для&nbsp;пляжа",
+        "text": [
+          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
+          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/fashion/4-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/fashion/4-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/fashion/4-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      }
+    ]
+  }
+}
 }

@@ -34,33 +34,27 @@ function addClassTogglerController (animationBlocks) {
 }
 
 
-function getFromPosition (el, defaultPosition = 0){
-  return (el.attr('data-parallax-from') !== undefined) ? Number(el.attr('data-parallax-from')) : defaultPosition;
+function getFromPosition (el, defaultPosition = [0, 0]){
+  return (el.attr('data-parallax-from') !== undefined) ? (el.attr('data-parallax-from')).split(', ') : defaultPosition;
 }
-function getToPosition (el, defaultPosition = 0){
-  return (el.attr('data-parallax-to') !== undefined) ? Number(el.attr('data-parallax-to')) : defaultPosition;
+function getToPosition (el, defaultPosition = [0, 0]){
+  return (el.attr('data-parallax-to') !== undefined) ? (el.attr('data-parallax-to')).split(', ') : defaultPosition;
 }
 
 function getParallaxTimeline (el) {
   let tween = new TimelineMax();
   let tweensArr = [];
-  if ($(el).find('.a-parallax-back')) {
-    let targetEl = $(el).find('.a-parallax-back');
-    let fromPos = getFromPosition(targetEl, -20);
+  if ($(el).find('.a-parallax-left')) {
+    let targetEl = $(el).find('.a-parallax-left');
+    let fromPos = getFromPosition(targetEl, [-30, 30]);
     let toPos = getToPosition(targetEl);
-    tweensArr.push(TweenMax.fromTo(targetEl, 1, {yPercent: fromPos}, {yPercent: toPos, ease: Linear.easeNone}));
+    tweensArr.push(TweenMax.fromTo(targetEl, 1, {xPercent: fromPos[0], yPercent: fromPos[1]}, {xPercent: toPos[0], yPercent: toPos[1], ease: Linear.easeNone}));
   }
-  if ($(el).find('.a-parallax-middle')) {
-    let targetEl = $(el).find('.a-parallax-middle');
-    let fromPos = getFromPosition(targetEl, -15);
+  if ($(el).find('.a-parallax-right')) {
+    let targetEl = $(el).find('.a-parallax-right');
+    let fromPos = getFromPosition(targetEl, [30, 30]);
     let toPos = getToPosition(targetEl);
-    tweensArr.push(TweenMax.fromTo(targetEl, 1, {yPercent: fromPos}, {yPercent: toPos, ease: Linear.easeNone}));
-  }
-  if ($(el).find('.a-parallax-front')) {
-    let targetEl = $(el).find('.a-parallax-front');
-    let fromPos = getFromPosition(targetEl, -10);
-    let toPos = getToPosition(targetEl, 10);
-    tweensArr.push(TweenMax.fromTo(targetEl, 1, {yPercent: fromPos}, {yPercent: toPos, ease: Linear.easeNone}));
+    tweensArr.push(TweenMax.fromTo(targetEl, 1, {xPercent: fromPos[0], yPercent: fromPos[1]}, {xPercent: toPos[0], yPercent: toPos[1], ease: Linear.easeNone}));
   }
   tween.add(tweensArr);
   return tween;
@@ -69,7 +63,7 @@ function getParallaxTimeline (el) {
 function addParallaxScene (el, tween, controller) {
   new ScrollMagic.Scene({
     triggerElement: el,
-    triggerHook: 0,
+    triggerHook: 0.2,
     duration: $(el).height()
   })
   .setTween(tween)

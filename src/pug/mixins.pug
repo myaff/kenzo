@@ -1,6 +1,22 @@
 mixin icon(iconName)
   svg&attributes(attributes).icon: use(xlink:href="#" + iconName)
 
+//- social
+mixin social(isInline, hasTitle)
+  .social&attributes(attributes)(class=isInline ? "social--inline" : '')
+    if hasTitle
+      .social__title Поделитьcя
+    if isInline && hasTitle
+      .social__delimiter
+    #share
+
+mixin navMenu(menuList)
+  nav&attributes(attributes).nav-menu
+    ul.nav-menu__list
+      each item in menuList
+        li.nav-menu__item
+          a.nav-menu__link(href=item.url)(class= item.isActive ? '' : 'disabled') !{item.title}
+
 mixin modal(modalID)
   div&attributes(attributes).modal(id=modalID)
     .modal__close.btn.btn--plain.btn-close-modal

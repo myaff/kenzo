@@ -1,0 +1,31 @@
+.nav-menu {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flexy(center, center);
+  }
+  
+  &__item {
+    margin: 0 0.75rem;
+  }
+  
+  &__link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font: normal 14px/1 $font-base;
+    border-bottom: 1px solid transparent;
+    
+    {hover-focus-active} {
+      color: white;
+      border-bottom-color: currentColor;
+      outline: 0;
+    }
+    
+    &.disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}

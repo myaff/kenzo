@@ -4,11 +4,21 @@
   font: normal 14px/1.5 $font-util;
   padding: 20px 0;
   text-align: center;
-  fixed(0, 0px, 0px);
+  
   width: 100%;
   
-  @media $lgHeight {
-    bottom: calc(100vh - 11vh - 570px - 150px);
+  .layout--home & {
+    fixed(0, 0px, 0px);
+  
+    @media $lgHeight {
+      bottom: calc(100vh - 11vh - 570px - 150px);
+    }
+  }
+  
+  .layout--detail & {
+    background: url('../img/placeholder.jpg') center no-repeat;
+    background-size: cover;
+    padding: 60px 0 160px;
   }
   
   a {
@@ -37,5 +47,10 @@
       display: block;
       size(100%);
     }
+  }
+  
+  &__social,
+  &__nav {
+    margin-bottom: 5rem;
   }
 }
