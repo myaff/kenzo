@@ -1,5 +1,16 @@
 .page {
   &--art {
+    .wave-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform:  translateY(-50%);
+      opacity: 0;
+
+      .is-loaded &{
+        opacity: 1;
+      }
+    }
     .detail-section {
       &__img {
         img {
@@ -88,5 +99,19 @@
         }
       }
     }
+  }
+}
+
+canvas{
+  top: 0 !important;
+  left: 0 !important;
+  position: absolute;
+  transform: scaleX(1.05) !important;
+}
+
+.start-screen{
+  & > .l-container{
+    position: relative;
+    z-index: 2;
   }
 }
