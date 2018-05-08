@@ -8,6 +8,7 @@ block content
   - var $page = pages[currentPage];
   .page.page--detail(class="page--" + currentPage)
     .start-screen
+      img.wave-image.js-wave-image(src='build/img/placeholder.jpg', alt='')
       .l-container
         .start-screen__inner
           +navMenu(mainNav).start-screen__nav
@@ -30,7 +31,7 @@ block content
             .detail-section__imgs
               each itemImg, imgIndex in item.imgs
                 .detail-section__img(class="detail-section__img--" + (imgIndex + 1), class=itemImg.animClass)
-                  img(src=itemImg.src, alt="")
+                  img.slide-item__image(src=itemImg.src, alt="")
                   if itemImg.wave
                     .js-wave-wrapper(data-img=itemImg.src)
                       canvas.js-wave(id="wave-" + (index + 1) + "-" + (imgIndex + 1))
