@@ -9,6 +9,7 @@
   "author": "Olga Grabko",
   "license": "ISC",
   "dependencies": {
+    "@pixi/filter-shockwave": "^2.6.1",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-preset-es2015": "^6.18.0",
@@ -37,6 +38,7 @@
     "gulp-uglify": "^2.0.0",
     "html-webpack-plugin": "^2.30.1",
     "jquery": "^3.3.1",
+    "pixi.js": "^4.7.3",
     "postcss-flexbugs-fixes": "^3.0.0",
     "pug": "^2.0.3",
     "scrollmagic": "^2.0.5",

@@ -32,5 +32,4 @@ block content
                 .detail-section__img(class="detail-section__img--" + (imgIndex + 1), class=itemImg.animClass)
                   img(src=itemImg.src, alt="")
                   if itemImg.wave
-                    .js-wave-wrapper(data-img=itemImg.src)
-                      canvas.js-wave(id="wave-" + (index + 1) + "-" + (imgIndex + 1))
+                    .js-wave(data-img=itemImg.src, id="wave-" + (index + 1) + "-" + (imgIndex + 1))

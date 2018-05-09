@@ -9,6 +9,7 @@ let MainMenu = require("./components/main-menu");
 let Video = require("./components/video");
 let Animation = require("./components/animation");
 let Share = require("./components/share");
+let Wave = require("./components/wave");
 
 $(document).ready(function(){
   
@@ -22,6 +23,7 @@ $(document).ready(function(){
   //MainMenu.init();
   Video.init();
   Share.init();
+  Wave.init();
   
   $.afterlag(function(){
     $('html').addClass('is-loaded');
@@ -60,5 +62,6 @@ module.exports = {
   Tabs,
   MainMenu,
   Video,
-  Share
+  Share,
+  Wave
 };
