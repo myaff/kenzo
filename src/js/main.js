@@ -23,7 +23,10 @@ $(document).ready(function(){
   //MainMenu.init();
   Video.init();
   Share.init();
-  Wave.init();
+  
+  if (DeviceDetection.isDesktop()) {
+    Wave.init();
+  }
   
   $.afterlag(function(){
     $('html').addClass('is-loaded');

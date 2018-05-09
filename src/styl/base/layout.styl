@@ -5,13 +5,11 @@ html, body {
   background: $white;
   font: normal $font-size-base/1.5 $font-base;
   color: $black;
+  overflow-x: hidden;
   
   .is-scrolling {
     pointer-events: none;
   }
-}
-body {
-  overflow-x: hidden;
 }
 .l-container {
   relative();
@@ -43,6 +41,12 @@ body {
   background-attachment: fixed;
   
   flexy(flex-start, center, nowrap, column);
+  
+  @media $smWidth {
+    &--detail {
+      background-attachment: initial;
+    }
+  }
   > div {
     width: 100%;
     flex: 0 0 auto;
@@ -96,4 +100,8 @@ video {
   display: block;
   width: 100%;
   height: auto;
+}
+
+body > canvas, .wave-image {
+  display: none;
 }

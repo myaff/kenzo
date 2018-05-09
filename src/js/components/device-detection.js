@@ -11,6 +11,9 @@ function isMobile(){
 function isTablet(){
   return ($(window).width() > breakpoints.sm && $(window).width() <= breakpoints.md)
 }
+function isDesktop(){
+  return ($(window).width() > breakpoints.md)
+}
 function isTouch(){
   return 'ontouchstart' in window || navigator.maxTouchPoints;
 }
@@ -26,4 +29,4 @@ function run(){
   }
 }
 
-module.exports = {run, isTouch, isMobile, isTablet, isMobileVersion};
+module.exports = {run, isTouch, isMobile, isTablet, isDesktop, isMobileVersion};

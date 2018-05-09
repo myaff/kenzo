@@ -17,8 +17,8 @@
       color: white;
       text-decoration: none;
     }
-    @media $mobile {
-      font-size: 5rem;
+    @media $smWidth {
+      font-size: (32*100/640)vw;
     }
   }
   &__link + &__link {
@@ -87,12 +87,15 @@
       color: white;
       text-decoration: none;
     }
-    @media $mobile {
-      font-size: 4rem;
+    @media $smWidth {
+      font-size: (32*100/640)vw;
     }
   }
   &__item + &__item {
     margin-left: 2rem;
+    @media $smWidth {
+      margin-left: (56*100/640)vw;
+    }
   }
   
   &__title {

@@ -8,12 +8,13 @@ block content
   - var $page = pages[currentPage];
   .page.page--detail(class="page--" + currentPage)
     .start-screen
+      img.wave-image.js-wave-image-full(src='build/img/placeholder.jpg', alt='')
       .l-container
         .start-screen__inner
           +navMenu(mainNav).start-screen__nav
           .start-screen__content
             .l-flex-center-noBottom
-              .l-col-11_sm-12
+              .l-col-12
                 .start-screen__title !{$page.start.title}
               .l-col-8_sm-12
                 .start-screen__text !{$page.start.text}
@@ -24,12 +25,14 @@ block content
             .detail-section__title !{item.title}
             .detail-section__texts
               .l-flex-center-noBottom
-                each sectionText in item.text
-                  .l-col-6_sm-12
+                each sectionText, indexText in item.text
+                  .l-col-6_sm-12(class="detail-section__text--" + (indexText + 1))
                     .detail-section__text !{sectionText}
-            .detail-section__imgs
-              each itemImg, imgIndex in item.imgs
-                .detail-section__img(class="detail-section__img--" + (imgIndex + 1), class=itemImg.animClass)
-                  img(src=itemImg.src, alt="")
-                  if itemImg.wave
-                    .js-wave(data-img=itemImg.src, id="wave-" + (index + 1) + "-" + (imgIndex + 1))
+                .l-col-12.detail-section__imgs
+                  each itemImg, imgIndex in item.imgs
+                    .detail-section__img(class="detail-section__img--" + (imgIndex + 1), class=itemImg.animClass)
+                      img.slide-item__image(src=itemImg.src, alt="", class= itemImg.wave ? "wave-image js-wave-image" : "")
+      .detail-sections__btn.l-hidden-md-up
+        a.btn.btn--secondary(href="#")
+          +icon("arrow-outlined")
+          span Узнать больше

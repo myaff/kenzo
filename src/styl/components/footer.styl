@@ -19,6 +19,10 @@
     background: url('../img/placeholder.jpg') center no-repeat;
     background-size: cover;
     padding: 60px 0 160px;
+    
+    @media $smWidth {
+      padding: (70*100/640)vw 0;
+    }
   }
   
   a {
@@ -31,16 +35,17 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.1em;
-    @media $xsWidth {
-      font-size: 12px;
+    @media $smWidth {
+      font-size: (20*100/640)vw;
     }
   }
   &__logo {
     display: block;
     size(125px, 30px);
     margin: 1rem auto 0;
-    @media $msWidth {
-      width: 100px;
+    @media $smWidth {
+      width: (125*100/640)vw;
+      margin: (24*100/640)vw auto 0//;
     }
     
     .icon {
@@ -52,5 +57,9 @@
   &__social,
   &__nav {
     margin-bottom: 5rem;
+    @media $smWidth {
+      max-width: (490*100/640)vw;
+      margin: 0 auto (50*100/640)vw;
+    }
   }
 }

@@ -30,7 +30,8 @@
         size(auto, calc(100vh - 100px - 130px));
       }
       @media $xsWidth {
-        size(auto, calc(100vh - 70px - 100px));
+        //size(auto, calc(100vh - 70px - 100px));
+        size((100 - (60*100/640) * 2)vw, auto);
       }
       @media $xsHeight {
         size(100%, auto);
@@ -137,6 +138,9 @@
     @media $xsWidth {
       top: 50%;
       transform: translateY(-50%);
+      width: auto;
+      left: (30*100/320)vw;
+      right: (30*100/320)vw;
     }
   }
   &__text {
@@ -148,9 +152,8 @@
       font-size: 4vw;
     }
     @media $xsWidth {
-      font-size: 12vw;
-      text-transform: uppercase;
-      font-weight: bold;
+      font-size: (30*100/320)vw;
+      font-weight: 500;
       line-height: 1.2;
     }
     .is-animating & {

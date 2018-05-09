@@ -9,6 +9,7 @@
     size(100%);
     flexy(center, center);
     overflow-y: auto;
+    z-index: 3;
   }
   &__content {
     width: 100%;
@@ -27,6 +28,7 @@
     margin-bottom: 40px;
     @media $xsWidth {
       margin-bottom: 10vw;
+      font-size: (20*100/640)vw;
     }
   }
   &__text {
@@ -35,7 +37,7 @@
     margin: 40px auto;
     @media $xsWidth {
       margin: 10vw auto;
-      font-size: 1.5rem;
+      font-size: (30*100/640)vw;
     }
   }
   &__btn {

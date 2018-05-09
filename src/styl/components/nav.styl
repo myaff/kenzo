@@ -4,10 +4,21 @@
     padding: 0;
     list-style: none;
     flexy(center, center);
+    
+    @media $smWidth {
+      flex-wrap: wrap;
+    }
   }
   
   &__item {
     margin: 0 0.75rem;
+    @media $smWidth {
+      margin: (12*100/640)vw (16*100/640)vw;
+      
+      &:last-child {
+        flex: 1 1 100%;
+      }
+    }
   }
   
   &__link {
@@ -16,6 +27,7 @@
     text-decoration: none;
     font: normal 14px/1 $font-base;
     border-bottom: 1px solid transparent;
+    white-space: nowrap;
     
     {hover-focus-active} {
       color: white;

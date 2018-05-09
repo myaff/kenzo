@@ -20,8 +20,18 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.1em;
-    @media $xsWidth {
-      display: none;
+    @media $smWidth {
+      .layout--home & {
+        font-size: (20*100/640)vw;
+        padding: 1em;
+        fixed(100vh, 0px);
+        size(100vh, (60*100/640)vw);
+        transform: rotate(-90deg);
+        transform-origin: top left;
+      }
+      .layout--detail & {
+        display: none;
+      }
     }
     @media $xsHeight {
       display: none;

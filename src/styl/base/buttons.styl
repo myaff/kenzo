@@ -17,6 +17,11 @@
   background: transparent;
   color: white;
   
+  @media $xsWidth {
+    font-size: (20*100/640)vw;
+    padding: 1.25em 3.3em;
+  }
+  
   {hover-focus-acitve} {
     outline: 0;
   }
@@ -53,13 +58,13 @@
     }
   }
   &--secondary {
-    color: $black;
-    background: $secondary;
+    color: white;
+    background: #01426a;
     border-color: transparent;
     
     {hover-focus-active} {
       color: $black;
-      background: darken($secondary, 20%);
+      background: darken(#01426a, 20%);
       border-color: transparent;
     }
   }
@@ -114,5 +119,9 @@
     text-transform: none;
     padding: 0;
     background: none;
+  }
+  
+  .icon + span {
+    margin-left: 1em;
   }
 }

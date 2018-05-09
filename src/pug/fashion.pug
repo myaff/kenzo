@@ -8,6 +8,7 @@ block content
   - var $page = pages[currentPage];
   .page.page--detail(class="page--" + currentPage)
     .start-screen
+      img.wave-image.js-wave-image-full(src='build/img/placeholder.jpg', alt='')
       .l-container
         .start-screen__inner
           +navMenu(mainNav).start-screen__nav

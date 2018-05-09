@@ -28,6 +28,10 @@
       @media $mdWidth {
         font-size: 14vw;
       }
+      @media $smWidth {
+        font-size: 12vw;
+        width: 100vw;
+      }
       
     }
     & ^[0]__sections {
@@ -47,7 +51,8 @@
         top: 340px;
       }
       @media $smWidth {
-        display: none;
+        left: auto;
+        right: (20*100/640)vw;
       }
       @media $lgWidth {
         left: calc((100% - 1260px) / 2);
@@ -59,6 +64,9 @@
         transition: background 0.3s;
         @media $mdWidth {
           margin: 1.95vw 0;
+        }
+        @media $smWidth {
+          margin: (25*100/640)vw 0;
         }
         
         &.active {
