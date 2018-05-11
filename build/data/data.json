@@ -39,16 +39,18 @@
       "build/img/screen-1_img-1.jpg",
       "build/img/screen-1_img-2.jpg",
       "build/img/screen-1_img-3.jpg"
-    ]
+    ],
+    "isActive": true
   },
   {
-    "text": "Вода в&nbsp;модных трендах",
-    "url": "fashion.html",
+    "text": "Вода в&nbsp;бьюти",
+    "url": "beauty.html",
     "images": [
       "build/img/screen-2_img-1.jpg",
       "build/img/screen-2_img-2.jpg",
       "build/img/screen-2_img-3.jpg"
-    ]
+    ],
+    "isActive": true
   },
   {
     "text": "Вода в&nbsp;спорте",
@@ -57,7 +59,8 @@
       "build/img/screen-3_img-1.jpg",
       "build/img/screen-3_img-2.jpg",
       "build/img/screen-3_img-3.jpg"
-    ]
+    ],
+    "isActive": true
   },
   {
     "text": "Вода в&nbsp;нашей жизни",
@@ -66,7 +69,8 @@
       "build/img/screen-4_img-1.jpg",
       "build/img/screen-4_img-2.jpg",
       "build/img/screen-4_img-3.jpg"
-    ]
+    ],
+    "isActive": true
   },
   {
     "text": "Новый аромат от&nbsp;KENZO",
@@ -75,7 +79,18 @@
       "build/img/screen-5_img-1.jpg",
       "build/img/screen-5_img-2.jpg",
       "build/img/screen-5_img-3.jpg"
-    ]
+    ],
+    "isActive": false
+  },
+  {
+    "text": "Вода в&nbsp;моде",
+    "url": "fashion.html",
+    "images": [
+      "build/img/screen-6_img-1.jpg",
+      "build/img/screen-6_img-2.jpg",
+      "build/img/screen-6_img-3.jpg"
+    ],
+    "isActive": true
   }
 ],
 "pages": {

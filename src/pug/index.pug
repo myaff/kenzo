@@ -11,7 +11,7 @@ block content
       .home-placeholder__inner
         .home-placeholder__content
           .home-placeholder__title специальный проект
-          .home-placeholder__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          .home-placeholder__text Без воды нет жизни, а&nbsp;значит, нет спорта, искусства, моды, красоты. Прямо сейчас мы&nbsp;готовы доказать это. Вода станет и&nbsp;вашей стихией, если осмелитесь приручить&nbsp;ее. Только для влюбленных в&nbsp;воду.
           .home-placeholder__btn
             button.btn.js-placeholder войти
     .page-content
@@ -19,15 +19,16 @@ block content
       .l-container
         .page__sections
           each item, index in homeScreens
-            .home-section.a-scroll-box(class="home-section--" + (index + 1))
-              a.home-section__link.js-hover(href=item.url)
-                .home-section__imgs
-                  each imgSrc, c in item.images
-                    .home-section__img(class="home-section__img--" + (c + 1)): img(src=imgSrc, alt="")
-                .home-section__content
-                  .home-section__text !{item.text}
-                  .home-section__icon
-                    +icon('arrow-right')
+            if item.isActive
+              .home-section.a-scroll-box(class="home-section--" + (index + 1))
+                a.home-section__link.js-hover(href=item.url)
+                  .home-section__imgs
+                    each imgSrc, c in item.images
+                      .home-section__img(class="home-section__img--" + (c + 1)): img(src=imgSrc, alt="")
+                  .home-section__content
+                    .home-section__text !{item.text}
+                    .home-section__icon
+                      +icon('arrow-right')
         .page__section-indicators
           each item, index in homeScreens
             .indicator.a-indicator(class="indicator--" + (index + 1))
