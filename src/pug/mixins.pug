@@ -14,8 +14,9 @@ mixin navMenu(menuList)
   nav&attributes(attributes).nav-menu
     ul.nav-menu__list
       each item in menuList
-        li.nav-menu__item
-          a.nav-menu__link(href=item.url)(class= item.isActive ? '' : 'disabled') !{item.title}
+        if layout == 'home' || (layout == 'detail' && item.key != 'home')
+          li.nav-menu__item
+            a.nav-menu__link(href=item.url, class= item.isActive ? '' : 'disabled', class= item.key == currentPage ? 'active' : '') !{item.title}
 
 mixin modal(modalID)
   div&attributes(attributes).modal(id=modalID)

@@ -150,10 +150,12 @@ function init(){
   $('.btn-menu').on('click', function(){
     $(this).toggleClass('is-open');
     $('.header').toggleClass('is-open');
-    $('.main-nav').slideToggle(500);
-    if (Main.DeviceDetection.isMobileVersion()) {
+    $('.main-nav').fadeToggle(500);
+    if (Main.DeviceDetection.isDesktopExt()) {
+      $('.main-nav-opposite').fadeToggle(500);
+    }
+    if (Main.DeviceDetection.isMobile() || Main.DeviceDetection.isTablet()) {
       if ($('.header').hasClass('is-open')) {
-        console.log('is-open');
         $('html, body').css('overflow-y', 'hidden');
       } else {
         $('html, body').css('overflow-y', '');

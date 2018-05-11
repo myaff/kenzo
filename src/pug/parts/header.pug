@@ -2,9 +2,11 @@ include ../mixins
 .header
   .l-container-fluid
     .header__content
-      .header__nav
+      .header__nav-btn
         button.btn-menu
-          +icon('burger')
-      .header__text специальный проект
+      .header__center
+        .header__nav.main-nav
+          +navMenu(mainNav)
+        .header__text.main-nav-opposite специальный проект
       .header__logo
         +icon('marie-claire')

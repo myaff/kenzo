@@ -19,6 +19,13 @@
         flex: 1 1 100%;
       }
     }
+    
+    .main-nav & {
+      margin: 0 0.5rem;
+      @media $lgWidth {
+        margin: 0 0.75rem;
+      }
+    }
   }
   
   &__link {
@@ -39,5 +46,19 @@
       opacity: 0.6;
       pointer-events: none;
     }
+    
+    &.active {
+      color: white;
+      border-bottom-color: currentColor;
+      outline: 0;
+    }
+  }
+}
+.main-nav {
+  display: none;
+  absolute(0px, -4rem);
+  width: 100%;
+  @media $lgWidth {
+    left: 0;
   }
 }

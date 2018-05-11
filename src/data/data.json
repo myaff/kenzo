@@ -1,33 +1,45 @@
 {
 "mainNav": [
   {
+    "title": "Главная",
+    "url": "/",
+    "key": "home",
+    "isActive": true
+  },
+  {
     "title": "Вода в&nbsp;искусстве",
     "url": "art.html",
+    "key": "art",
     "isActive": true
   },
   {
     "title": "Вода в&nbsp;бьюти",
     "url": "beauty.html",
+    "key": "beauty",
     "isActive": false
   },
   {
     "title": "Вода и&nbsp;спорт",
     "url": "sport.html",
+    "key": "sport",
     "isActive": false
   },
   {
     "title": "Вода в&nbsp;нашей жизни",
     "url": "life.html",
+    "key": "life",
     "isActive": true
   },
   {
     "title": "Вода в&nbsp;моде",
     "url": "fashion.html",
+    "key": "fashion",
     "isActive": true
   },
   {
     "title": "Aqua Kenzo",
     "url": "aqua-kenzo.html",
+    "key": "aqua",
     "isActive": false
   }
 ],
