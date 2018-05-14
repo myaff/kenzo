@@ -1,0 +1,179 @@
+.page {
+  &--beauty {
+    .detail-section {
+      &__img {
+        img {
+          display: block;
+          margin: 0 auto;
+          
+          @media $smWidth {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .detail-section--1 .detail-section {
+      &__imgs {
+        margin-top: 130px;
+        
+        @media $smWidth {
+          margin-top: (48*100/640)vw;
+          margin-bottom: (48*100/640)vw;
+          height: (536*100/640)vw;
+        }
+      }
+      &__img {
+        &--1 {
+          absolute(-40px);
+          right: calc(50% + 330px);
+          @media $smWidth {
+            top: 0;
+            left: 0;
+            right: auto;
+            width: (240*100/640)vw;
+          }
+        }
+        &--2 {
+          margin: 0 auto;
+          left: -40px;
+          @media $smWidth {
+            absolute((48*100/640)vw);
+            right: 0;
+            left: auto;
+            size((440*100/640)vw, (400*100/640)vw);
+            overflow: hidden;
+            
+            img {
+              size(auto, 100%);
+              absolute(0px, 70%);
+              transform: translateX(-60%);
+            }
+          }
+        }
+        &--3 {
+          absolute(-90px);
+          left: calc(50% + 170px);
+          @media $smWidth {
+            top: auto;
+            bottom: 0;
+            left: (48*100/640)vw;
+            width: (340*100/640)vw;
+          }
+        }
+      }
+    }
+    .detail-section--2 .detail-section {
+      &__imgs {
+        margin-top: 80px;
+        margin-bottom: 60px;
+        @media $smWidth {
+          margin-top: (38*100/640)vw;
+          margin-bottom: (48*100/640)vw;
+          height: (610*100/640)vw;
+        }
+      }
+      &__img {
+        &--1 {
+          absolute(210px);
+          right: calc(50% + 230px);
+          z-index: 3;
+          @media $smWidth {
+            top: auto;
+            left: auto;
+            right: 0;
+            bottom: 0;
+            width: (280*100/640)vw;
+          }
+        }
+        &--2 {
+          margin: 0 auto;
+          left: -35px;
+          z-index: 2;
+          @media $smWidth {
+            absolute(0px, 0px);
+            right: 0;
+            size(100vw, (530*100/640)vw);
+            overflow: hidden;
+            
+            img {
+              size(auto, 100%);
+            }
+          }
+        }
+        &--3 {
+          absolute(130px);
+          left: calc(50% + 310px);
+          z-index: 1;
+          @media $smWidth {
+            top: (32*100/640)vw;
+            left: -7vw;
+            right: 0;
+            size((260*100/640)vw, (470*100/640)vw);
+            z-index: 2;
+          }
+        }
+      }
+    }
+    .detail-section--3 .detail-section {
+      &__imgs {
+        margin-top: 160px;
+        @media $smWidth {
+          margin-top: (56*100/640)vw;
+          margin-bottom: (32*100/640)vw;
+          height: (470*100/640)vw;
+        }
+      }
+      &__img {
+        &--1 {
+          absolute(-130px);
+          right: calc(50% + 250px);
+          z-index: 2;
+          @media $smWidth {
+            top: (40*100/640)vw;
+            left: 0;
+            right: auto;
+            size((220*100/640)vw, (415*100/640)vw);
+            z-index: 3;
+            
+            img {
+              size(auto, 100%);
+            }
+          }
+        }
+        &--2 {
+          margin: 0 auto;
+          left: -35px;
+          z-index: 1;
+          @media $smWidth {
+            absolute(0px, 18vw);
+            right: 0;
+            z-index: 2;
+            height: 67vw;
+            
+            img {
+              size(auto, 100%);
+            }
+          }
+        }
+        &--3 {
+          absolute(-90px);
+          left: calc(50% + 230px);
+          z-index: 2;
+          @media $smWidth {
+            top: auto;
+            left: auto;
+            right: 0;
+            bottom: 0;
+            width: (220*100/640)vw;
+            z-index: 3;
+          }
+        }
+      }
+    }
+    .end-screen {
+      &__logo {
+        margin-left: 170px;
+      }
+    }
+  }
+}

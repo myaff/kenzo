@@ -16,13 +16,13 @@
     "title": "Вода в&nbsp;бьюти",
     "url": "beauty.html",
     "key": "beauty",
-    "isActive": false
+    "isActive": true
   },
   {
     "title": "Вода и&nbsp;спорт",
     "url": "sport.html",
     "key": "sport",
-    "isActive": false
+    "isActive": true
   },
   {
     "title": "Вода в&nbsp;нашей жизни",
@@ -113,19 +113,7 @@
     },
     "screens": [
       {
-        "title": "Водные фантазии",
-        "text": [
-          "<p>Немецкая художница Moki Mioke рисует мир своих фантазий на&nbsp;тему природы и&nbsp;человека. Как правило, в&nbsp;ее&nbsp;работах одно становится частью другого: деревья, купаются в&nbsp;реке, как лесные нимфы, а&nbsp;девочка спит в&nbsp;кровати-бухте, укрывшись морской волной, будто пуховым одеялом.</p>",
-          "<p>В&nbsp;отношении к&nbsp;цивилизации Moki Mioke категорична и&nbsp;считает, что в&nbsp;ней нет ничего хорошего. Вода&nbsp;&mdash; один из&nbsp;ключевых мотивов в&nbsp;ее&nbsp;творчестве: герои картин живут в&nbsp;гармонии со&nbsp;стихией, уважают ее&nbsp;и&nbsp;относятся к&nbsp;ней как к&nbsp;равной.</p>"
-        ],
-        "imgs": [
-          {"src": "build/img/art/1-1.jpg", "wave": false, "animClass": "a-parallax-left"},
-          {"src": "build/img/art/1-2.jpg", "wave": false, "animClass": ""},
-          {"src": "build/img/art/1-3.jpg", "wave": false, "animClass": "a-parallax-right"}
-        ]
-      },
-      {
-        "title": "Айсберги, которые не&nbsp;тают",
+        "title": "Лед и&nbsp;вода",
         "text": [
           "<p>Американка Зария Форман пишет кончи- ками пальцев пейзажи Гренландии&nbsp;&mdash; однажды она совершила экспедицию к&nbsp;берегам острова, привезла из&nbsp;нее тысячи фотографий нетронутого ландшафта и&nbsp;теперь повторяет их&nbsp;в&nbsp;живописи. Выглядит удивительно и&nbsp;абсолютно реалистично.</p>",
           "<p>Зария не&nbsp;просто восхищается красотой плавающих в&nbsp;Ледовитом океане глыб, а&nbsp;привлекает своим творчеством внимание к&nbsp;проблеме глобального потепления&nbsp;&mdash; часть средств, вырученных от&nbsp;продаж полотен, художница перечисляет на&nbsp;защиту природы.</p>"
@@ -137,7 +125,7 @@
         ]
       },
       {
-        "title": "Водопады <br/>в&nbsp;каменных джунглях",
+        "title": "Вода в&nbsp;архитектуре",
         "text": [
           "<p>В&nbsp;центре американского города Форт&#8209;Уэрт (штат Техас) еще в&nbsp;1970&#8209;х появился футу- ристичный парк, целиком посвященный воде&nbsp;&mdash; его так и&nbsp;называют Водяные сады Форта-Уэрта. Знаменитый архитектор Филип Джонсон создал его, чтобы у&nbsp;каждого жителя каменных джунглей был шанс прикоснуться к&nbsp;природе.</p>",
           "<p>Одной из&nbsp;самых красивых зон считается глубокий бассейн, в&nbsp;который с&nbsp;высоких 11-метровых стен падает вода. Сюда приходят насладиться красотой водной стихии, расслабиться, слушая ее&nbsp;шум, или освежиться в&nbsp;жаркий полдень. Кроме того, водяные сады привлекают в&nbsp;индустриаль- ный центр Техаса множество туристов.</p>"
@@ -151,8 +139,8 @@
       {
         "title": "Вода и&nbsp;природа человека",
         "text": [
-          "<p>Оскароносный фильм голливудского сказочника Гильермо дель Торо &laquo;Форма воды&raquo; рассказывает историю из&nbsp;жизни немой уборщицы Элизы, которая влюби- лась в&nbsp;человека-амфибию, оказавшегося в&nbsp;плену научной лаборатории. Ванная комната становится для двоих влюблен- ных океаном, а&nbsp;водный канал в&nbsp;городе &mdash;</p>",
-          "<p>путем к&nbsp;спасению и&nbsp;свободе. Картина, конечно, о&nbsp;любви, но&nbsp;еще и&nbsp;о&nbsp;том, что человек счастлив только в&nbsp;своей естественной среде, и&nbsp;для главных героев это вода.</p><p>А&nbsp;для вас? Баюкающие волны, соленый прибой и&nbsp;брызги на&nbsp;коже вызывают эйфорию&nbsp;и... зависимость.</p>"
+          "<p>Оскароносный фильм голливудского сказочника Гильермо дель Торо &laquo;Форма воды&raquo; рассказывает историю из&nbsp;жизни немой уборщицы Элизы, которая влюбилась в&nbsp;человека-амфибию, оказавшегося в&nbsp;плену научной лаборатории.</p>",
+          "<p>Ванная комната становится для двоих влюбленных океаном, а&nbsp;водный канал в&nbsp;городе&nbsp;&mdash; путем к&nbsp;спасению и&nbsp;свободе. Картина, конечно, о&nbsp;любви, но&nbsp;еще и&nbsp;о&nbsp;том, что человек счастлив только в&nbsp;своей стихии.</p>"
         ],
         "imgs": [
           {"src": "build/img/art/4-1.jpg", "wave": false, "animClass": "a-parallax-left"},
@@ -160,7 +148,13 @@
           {"src": "build/img/art/4-3.jpg", "wave": false, "animClass": "a-parallax-right"}
         ]
       }
-    ]
+    ],
+    "end": {
+      "url": "#",
+      "text": "<p>Теперь у&nbsp;влюбленных в&nbsp;воду появился еще один артефакт&nbsp;&mdash; аромат Aqua Kenzo в&nbsp;архитектурном флаконе-волне. Наполненный свежестью, играющий цветочными и&nbsp;фруктовыми оттенками женский аромат дополняет мужская версия&nbsp;&mdash; с&nbsp;глубокими древесными оттенками, подчеркивающими его морское звучание. Произведение парфюмерного искусства пополнило коллекцию ароматов Kenzo, и&nbsp;охота за&nbsp;ним среди истинных ценителей водной стихии уже началась.</p>",
+      "img": "build/img/art/end.jpg",
+      "imgLabel": "build/img/art/label.jpg"
+    }
   },
   "life": {
     "start": {
@@ -207,28 +201,30 @@
       {
         "title": "Акватический аромат",
         "text": [
-          "<p>Искристый аромат Aqua Kenzo&nbsp;&mdash; секрет беззаботного курортного настроения где&nbsp;бы вы&nbsp;ни&nbsp;находились. В&nbsp;женской версии парфюмер Луиза Тернер создала эффект взрывной волны за&nbsp;счет сочетания ярких нот мандарина, листьев малины и&nbsp;магнолии, а&nbsp;в&nbsp;мужском аромате от&nbsp;Ане Айо и&nbsp;Филиппа Романо первую партию исполняют освежающие древесные оттенки.</p>",
-          "<p>Ловко балансируя на&nbsp;грани глубокой чувственности и&nbsp;легкости букета, парфюмеры проявили себя как истинные серфингисты. Флакон аромата, как и&nbsp;бутылка воды, этим летом не&nbsp;будет лишним в&nbsp;вашей сумке.</p>"
+          "<p>Искристый аромат Aqua Kenzo&nbsp;&mdash; секрет беззаботного курортного настроения где&nbsp;бы вы&nbsp;ни&nbsp;находились. В&nbsp;женской версии парфюмер Луиза Тернер создала эффект взрывной волны за&nbsp;счет сочетания ярких нот мандарина, листьев малины и&nbsp;магнолии, а&nbsp;в&nbsp;мужском аромате от&nbsp;Ане Айо и&nbsp;Филиппа Романо первую партию</p>",
+          "<p>исполняют освежающие древесные оттенки. Ловко балансируя на&nbsp;грани глубокой чувственности и&nbsp;легкости букета, парфюмеры проявили себя как истинные серфингисты. Флакон аромата, как и&nbsp;бутылка воды, этим летом не&nbsp;будет лишним в&nbsp;вашей сумке.</p>"
         ],
-        "imgs": [
-          {"src": "build/img/life/4-1.jpg", "wave": false, "animClass": "a-parallax-left"},
-          {"src": "build/img/life/4-2.gif", "wave": false, "animClass": ""},
-          {"src": "build/img/life/4-3.jpg", "wave": false, "animClass": "a-parallax-right"}
-        ]
+        "imgs": false
       }
-    ]
+    ],
+    "end": {
+      "url": "#",
+      "text": false,
+      "img": "build/img/life/end.jpg",
+      "imgLabel": "build/img/life/label.jpg"
+    }
   },
   "fashion": {
     "start": {
       "title": "вода <br/>в&nbsp;моде",
-      "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer</p>"
+      "text": "<p>Взяв за&nbsp;ориентир четыре главных летних тренда, мы&nbsp;составили беспроигрышные образы, без которых чемодан на&nbsp;каникулы не&nbsp;собрать. Свежий, искрящийся аромат Aqua Kenzo подойдет к&nbsp;любой одежде и&nbsp;станет отличным спутником на&nbsp;курорте.</p>"
     },
     "screens": [
       {
-        "title": "Купальники <br/>как&nbsp;верхняя одежда",
+        "title": "Купальник вместо топа",
         "text": [
-          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
-          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+          "<p>Слитный купальник вместо боди и&nbsp;верх от&nbsp;бикини как альтернатива кроп-топу&nbsp;&mdash; один из&nbsp;самых заметных трендов по&nbsp;моти- вам 90-х. Для курорта такое решение&nbsp;&mdash; просто спасение: после прогулки можно отправиться на&nbsp;вечеринку у&nbsp;бассейна, оттуда&nbsp;&mdash; на&nbsp;веранду модного ресторана за&nbsp;коктейлем, а&nbsp;ночью искупаться в&nbsp;море.</p>",
+          "<p>Не&nbsp;ограничивайтесь монохромными вариантами: пестрые jungle-расцветки и&nbsp;абстрактные принты актуальнее.</p><p>На&nbsp;улицах больших городов купальник как верхняя одежда выглядит смелее, зато настроение морских каникул не&nbsp;покинет вас в&nbsp;каменных джунглях.</p>"
         ],
         "imgs": [
           {"src": "build/img/fashion/1-1.jpg", "wave": false, "animClass": "a-parallax-left"},
@@ -237,10 +233,10 @@
         ]
       },
       {
-        "title": "Тропические принты",
+        "title": "Деним навсегда",
         "text": [
-          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
-          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+          "<p>Каждый сезон практичный деним остается в&nbsp;моде&nbsp;&mdash; меняются лишь модели. Этим летом джинсы-бойфренды и&nbsp;широкие кюлоты сменили кроп-топы, скроенные как бюстгальтеры, шорты с&nbsp;завышенной талией и&nbsp;необычные тренчи. Именно эти вещи представлены в&nbsp;новой коллекции</p>",
+          "<p>La&nbsp;Collection Memento&nbsp;#2 от&nbsp;KENZO, лицом которой недавно стала Бритни Спирс. Перед объективом Питера Линдберга певица также позирует в&nbsp;свитшоте с&nbsp;изображением высокой волны&nbsp;&mdash; отличная пара для любимых джинсов!</p>"
         ],
         "imgs": [
           {"src": "build/img/fashion/2-1.jpg", "wave": false, "animClass": "a-parallax-left"},
@@ -249,10 +245,10 @@
         ]
       },
       {
-        "title": "Свитшот с&nbsp;морскими мотивами",
+        "title": "Замена клатчу — сумка&#8209;шоппер",
         "text": [
-          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
-          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+          "<p>Летом новый клатч или кросс-боди не&nbsp;так удобны, как большая сумка-шоппер, в&nbsp;которую поместится полотенце, солнце- защитный крем, бутылка воды и&nbsp;флакон аромата Aqua Kenzo на&nbsp;вечер. Соломенные модели подходят только для вылазки на&nbsp;пляж, а&nbsp;вот джинсовая сумка KENZO</p>",
+          "<p>с&nbsp;волной или бамбуковым лесом на&nbsp;нашивке справится с&nbsp;плотным расписанием целого дня: после отдыха у&nbsp;воды с&nbsp;ней&nbsp;же можно пойти на&nbsp;свидание в&nbsp;бар на&nbsp;берегу. Дополнят расслабленный образ сандалии в&nbsp;пеструю расцветку, джинсовые мокасины или эспадрильи.</p>"
         ],
         "imgs": [
           {"src": "build/img/fashion/3-1.jpg", "wave": false, "animClass": "a-parallax-left"},
@@ -261,10 +257,10 @@
         ]
       },
       {
-        "title": "Аксессуары для&nbsp;пляжа",
+        "title": "Гавайские рубашки и&nbsp;кимоно",
         "text": [
-          "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</p>",
-          "<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>"
+          "<p>Гавайская рубашка негласно признана вещью &#8470;&nbsp;1&nbsp;на прошедшей Парижской неделе моды. В&nbsp;новой коллекции KENZO просторные рубашки украсили принты с&nbsp;бамбуком и&nbsp;тигром, затаившемся в&nbsp;джунглях. Среди фасонов представлена не&nbsp;только классическая свободная модель (не&nbsp;стесняйтесь завязать на&nbsp;животе, как</p>",
+          "<p>делали в&nbsp;90&#8209;е), но&nbsp;и&nbsp;подчеркивающая талию рубашка-кимоно. На&nbsp;Мальдивах будете чувствовать себя одетым точно по&nbsp;дресс-коду, а&nbsp;дополнит образ аромат Aqua Kenzo с&nbsp;нотой того самого сочного мандарина, который вы&nbsp;хоть сейчас можете сорвать с&nbsp;ветки.</p>"
         ],
         "imgs": [
           {"src": "build/img/fashion/4-1.jpg", "wave": false, "animClass": "a-parallax-left"},
@@ -272,7 +268,129 @@
           {"src": "build/img/fashion/4-3.jpg", "wave": false, "animClass": "a-parallax-right"}
         ]
       }
-    ]
+    ],
+    "end": {
+      "url": "#",
+      "text": false,
+      "img": "build/img/fashion/end.jpg",
+      "imgLabel": "build/img/fashion/label.jpg"
+    }
+  },
+  "beauty": {
+    "start": {
+      "title": "вода <br/>в&nbsp;бьюти",
+      "text": "<p>Ее&nbsp;пьют, в&nbsp;ней купаются, она каждый день проливается дождем из&nbsp;душа, но&nbsp;возможности воды настолько безграничны, что в&nbsp;этом сезоне ее&nbsp;&laquo;носят&raquo; на&nbsp;коже. Для создания модного летнего образа с&nbsp;калифорнийским акцентом следуйте этим несложным бьюти-трендам. Пара капель нового аромата Aqua Kenzo помогут поймать нужную волну!</p>"
+    },
+    "screens": [
+      {
+        "title": "“Влажные” веки",
+        "text": [
+          "<p>Мерцающие,&quot;влажные&quot; веки идеально смотрятся на&nbsp;фото или видео. Для создания подиумного образа вам понадобятся: тени бежевых оттенков, белый карандаш для очерчивания слизистой глаза и&nbsp;немного прозрачного блеска для губ, который можно нанести</p>",
+          "<p>как финальный штрих в&nbsp;центр века&nbsp;&mdash; не&nbsp;очень комфортно, зато эффектно. Тени с&nbsp;кремовой текстурой избавят от&nbsp;необходимости прибегать к&nbsp;трюкам&nbsp;&mdash; просто аккуратно прокрасьте ими все подвижное веко. Пусть все думают, что вы&nbsp;только что вышли из&nbsp;пены морской!</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/beauty/1-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/beauty/1-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/beauty/1-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Сияющая кожа",
+        "text": [
+          "<p>Из&nbsp;lifestyle-тренда спорт решительно перешел в&nbsp;бьюти&nbsp;&mdash; даже если вы&nbsp;не&nbsp;зани- маетесь на&nbsp;тренажерах, кожа должна выглядеть так, будто вы&nbsp;только что вышли из&nbsp;зала. Создать иллюзию подсвеченной, чуть влажной кожи, иначе говоря gym- skin, помогут золотистые хайлайтеры&nbsp;и</p>",
+          "<p>кремовая пудра. Щедро нанесите средства на&nbsp;скулы, лоб, подбородок и&nbsp;спинку нос, где пот обычно выступает в&nbsp;первую очередь. Для завершения образа останет- ся&nbsp;добавить только тушь и&nbsp;немного прозрачного блеска на&nbsp;губы&nbsp;&mdash; идеальный &laquo;освежающий&raquo; макияж на&nbsp;лето.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/beauty/2-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/beauty/2-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/beauty/2-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Глянцевые губы",
+        "text": [
+          "<p>Еще недавно мы&nbsp;терпеливо работали карандашом, помадой и&nbsp;блеском, чтобы создать безупречный градиент на&nbsp;губах, и&nbsp;тщательно наносили матовую помаду на&nbsp;праймер. Забудьте! Все, что нужно для модного макияжа губ этим летом&nbsp;&mdash; скраб для придания им&nbsp;гладкой поверхности, и&nbsp;бальзам с&nbsp;эффектом мерцания.</p>",
+          "<p>Кьяра Ферраньи, Эмили Ратаковски и&nbsp;ставшая недавно лицом бренда Kenzo Бритни Спирс изменяют красной помаде и&nbsp;появляются с&nbsp;естественными &laquo;влажными&raquo; губами даже на&nbsp;красных дорожках. Сексуально, просто и&nbsp;никаких следов на&nbsp;бокалах во&nbsp;время afterparty.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/beauty/3-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/beauty/3-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/beauty/3-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Волнующий аромат",
+        "text": [
+          "<p>Летний аромат должен освежать образ, как глоток воды в&nbsp;горячий полдень, заряжать энергией и&nbsp;одинаков хорошо дополнять коктейльное платье в&nbsp;пайетках и&nbsp;спортивный купальник. Все это про парфюмерный хит сезона&nbsp;&mdash; Aqua Kenzo с&nbsp;взрывными нотами мандарина, черной смородины, листьев малины и&nbsp;магнолии&nbsp;в</p>",
+          "<p>букете. Ароматы цветов смешиваются с&nbsp;отчетливым запахом прибоя, как будто вы&nbsp;нашли дивный сад прямо на&nbsp;берегу калифорнийской бухты. На&nbsp;одной волне с&nbsp;женским ароматом&nbsp;&mdash; мужская версия с&nbsp;аккордами орешника, кедра и&nbsp;пикантного розового перца. Идеальный тандем для влюбленных в&nbsp;воду!</p>"
+        ],
+        "imgs": false
+      }
+    ],
+    "end": {
+      "url": "#",
+      "text": false,
+      "img": "build/img/beauty/end.jpg",
+      "imgLabel": "build/img/beauty/label.jpg"
+    }
+  },
+  "sport": {
+    "start": {
+      "title": "вода <br/>в&nbsp;спорте",
+      "text": "<p>Хоть раз в&nbsp;жизни вам доводилось встречать недовольного жизнью серфингиста? Если вы&nbsp;до&nbsp;сих пор не&nbsp;пробовали приручить море, даем четыре беспроигрышных варианта для того, чтобы начать. Последний штрих&nbsp;&mdash; аромат Kenzo Aqua, и&nbsp;вы&nbsp;готовы к&nbsp;приключениям!</p>"
+    },
+    "screens": [
+      {
+        "title": "Кайтинг в&nbsp;России",
+        "text": [
+          "<p>Если коротко, то&nbsp;кайтинг&nbsp;&mdash; это катание на&nbsp;доске вслед за&nbsp;воздушным змеем. Эмоций больше, чем при обычном серфинге, а&nbsp;вид цветного купола, парящего над волнами, вызывает детский восторг.<br />Развлечение популярно везде, где есть море, и&nbsp;случается ветреная погода, и&nbsp;Сочи здесь не&nbsp;исключение. На&nbsp;пляже курорта Дагомыс, в&nbsp;Имеретинской бухте и&nbsp;на&nbsp;побережье Адлера (ищите яхт-клуб</p>",
+          "<p>&laquo;Авиатор&raquo;) найдутся прекрасные кайт- школы, где новичков обучат уверенно стоять на&nbsp;доске, рулить по&nbsp;ветру и&nbsp;против него. Климат российского юга идеально подходит для кайтинга в&nbsp;середине лета. Если хотите продолжить тренировки зимой, отправляйтесь в&nbsp;Азию, где в&nbsp;это время как раз дуют ветра. В&nbsp;Таиланде попутно можно освоить и&nbsp;другие виды водного спорта.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/sport/1-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/sport/1-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/sport/1-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Вейкбординг в&nbsp;Таиланде ",
+        "text": [
+          "<p>В&nbsp;теории вейкбординг&nbsp;&mdash; очень простой спорт: вы&nbsp;надеваете особые ботинки, которые прикрепляете к&nbsp;короткой широкой доске, затем вас специальным тросом пристегивают к&nbsp;катеру и&nbsp;включают полную скорость.<br />Все, что от&nbsp;вас требуется дальше можно свести к&nbsp;одному&nbsp;&mdash; ни&nbsp;при каких обстоятельствах не&nbsp;падайте в&nbsp;воду. Соленые брызги, свист ветра в&nbsp;ушах,</p>",
+          "<p>ощущение полной свободы гарантирова- ны. Кататься можно где угодно&nbsp;&mdash; клубы есть даже в&nbsp;Санкт-Петербурге, но&nbsp;попробовать впервые советуем на&nbsp;Пхукете или в&nbsp;окрестностях Паттайи. В&nbsp;Таиланде культура вейкбординга хорошо развита, заниматься этим видом спорта на&nbsp;райских пляжах можно круглый год, а&nbsp;еще после тренировки всегда можно съесть первоклассный Том&nbsp;Ям.</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/sport/2-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/sport/2-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/sport/2-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Дайвинг в&nbsp;Израиле",
+        "text": [
+          "<p>Школу дайвинга в&nbsp;Израиле начали развивать военные, полвека назад устроившие на&nbsp;берегу Красного моря кружок по&nbsp;любительскому погружению. Теперь Эйлат по&nbsp;праву считается столицей мирового дайвинга, а&nbsp;профессиональных школ здесь больше, чем спа-зон. Любители подводного плавания приезжают на&nbsp;курорт со&nbsp;всего света,</p>",
+          "<p>чтобы исследовать одну из&nbsp;самых живописных акваторий планеты. Стаи разноцветных рыб, морские звезды, ежи и&nbsp;черепахи приветствуют дайверов, как заглянувших в&nbsp;гости друзей. Может быть, дело в&nbsp;том, что все мы&nbsp;миллиарды лет назад вышли из&nbsp;воды&nbsp;и, опускаясь в&nbsp;нее снова, каждый раз будто возвращаемся домой?</p>"
+        ],
+        "imgs": [
+          {"src": "build/img/sport/3-1.jpg", "wave": false, "animClass": "a-parallax-left"},
+          {"src": "build/img/sport/3-2.jpg", "wave": false, "animClass": ""},
+          {"src": "build/img/sport/3-3.jpg", "wave": false, "animClass": "a-parallax-right"}
+        ]
+      },
+      {
+        "title": "Серфинг в&nbsp;Крыму",
+        "text": [
+          "<p>Самый захватывающий серфинг, безусловно, ждет вас на&nbsp;его родине, в&nbsp;Калифорнии&nbsp;&mdash; дикие пляжи и&nbsp;буйствую- щая природа южного Штата, к&nbsp;слову, вдохновила креативных директоров Kenzo Кэрол Лим и&nbsp;Умберто Леона на&nbsp;создание аромата Kenzo Aqua. Но&nbsp;пока вы&nbsp;лелеете &laquo;американскую мечту&raquo; встать на&nbsp;доску в&nbsp;Сан-Диего или Санта-Круз,</p>",
+          "<p>поймать свою первую волну и&nbsp;отработать навыки можно и&nbsp;на&nbsp;побережье Крыма. Высокими и&nbsp;медленными волнами славен Севастополь и&nbsp;Царская бухта в&nbsp;окрестнос- тях Судака, а&nbsp;на&nbsp;Казантипе вас ждет уже более строптивое море и&nbsp;широкий круг единомышленников. Плюс&nbsp;&mdash; на&nbsp;родном языке новичкам удобнее общаться с&nbsp;инструктором.</p>"
+        ],
+        "imgs": false
+      }
+    ],
+    "end": {
+      "url": "#",
+      "text": false,
+      "img": "build/img/sport/end.jpg",
+      "imgLabel": "build/img/sport/label.jpg"
+    }
   }
 }
 }

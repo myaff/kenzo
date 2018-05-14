@@ -20,7 +20,7 @@ block content
                 .start-screen__text !{$page.start.text}
     .page-sections
       each item, index in $page.screens
-        .detail-section.a-parallax-box(class="detail-section--" + (index + 1))
+        .detail-section(class="detail-section--" + (index + 1), class= item.imgs ? 'a-parallax-box' : '')
           .l-container
             .detail-section__title !{item.title}
             .detail-section__texts
@@ -28,11 +28,19 @@ block content
                 each sectionText, indexText in item.text
                   .l-col-6_sm-12(class="detail-section__text--" + (indexText + 1))
                     .detail-section__text !{sectionText}
-                .l-col-12.detail-section__imgs
-                  each itemImg, imgIndex in item.imgs
-                    .detail-section__img(class="detail-section__img--" + (imgIndex + 1), class=itemImg.animClass)
-                      img.slide-item__image(src=itemImg.src, alt="", class= itemImg.wave ? "wave-image js-wave-image" : "")
-      .detail-sections__btn.l-hidden-md-up
-        a.btn.btn--secondary(href="#")
-          +icon("arrow-outlined")
-          span Узнать больше
+                if item.imgs
+                  .l-col-12.detail-section__imgs
+                    each itemImg, imgIndex in item.imgs
+                      .detail-section__img(class="detail-section__img--" + (imgIndex + 1), class=itemImg.animClass)
+                        img.slide-item__image(src=itemImg.src, alt="", class= itemImg.wave ? "wave-image js-wave-image" : "")
+    .end-screen
+      .l-container
+        .end-screen__inner
+          if $page.end.text
+            .end-screen__text !{$page.end.text}
+          .end-screen__img: img(src=$page.end.img, alt="")
+          .end-screen__btn
+            a.btn.btn--secondary(href=$page.end.url, target="_blank")
+              +icon("arrow-outlined")
+              span Узнать больше
+          .end-screen__logo.l-hidden-sm-down: img(src=$page.end.imgLabel, alt="Aqua Kenzo")

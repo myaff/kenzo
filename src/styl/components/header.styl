@@ -41,6 +41,7 @@
   }
   
   &__nav-btn {
+    z-index: 9;
     .layout--detail & {
       display: none;
       @media $smWidth {
@@ -78,6 +79,10 @@
     flex: 0 0 calc(100% - 185px * 2);
     height: 1.5rem;
     flexy(center, center);
+    
+    .layout--detail & {
+      justify-content: flex-start;
+    }
   }
   
 }
