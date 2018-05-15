@@ -60,6 +60,10 @@
             bottom: 0;
             right: -12vw;
             width: (430*100/640)vw;
+            
+            img {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -240,6 +244,13 @@
     .end-screen {
       &__logo {
         margin-left: 170px;
+      }
+      &__btn {
+        bottom: 270px;
+        
+        @media $smWidth {
+          bottom: 32vw;
+        }
       }
     }
   }

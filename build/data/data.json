@@ -35,12 +35,6 @@
     "url": "fashion.html",
     "key": "fashion",
     "isActive": true
-  },
-  {
-    "title": "Aqua Kenzo",
-    "url": "aqua-kenzo.html",
-    "key": "aqua",
-    "isActive": false
   }
 ],
 "homeScreens": [
@@ -150,7 +144,7 @@
       }
     ],
     "end": {
-      "url": "#",
+      "url": "https://shop.rivegauche.ru/newstore/ru/%D0%A0%D0%98%D0%92-%D0%93%D0%9E%D0%A8/%D0%92%D1%81%D0%B5-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Kenzo/c/rg_brand_64/KenzoNav#rgshare=%3A%3Acategory%3AKenzoNav",
       "text": "<p>Теперь у&nbsp;влюбленных в&nbsp;воду появился еще один артефакт&nbsp;&mdash; аромат Aqua Kenzo в&nbsp;архитектурном флаконе-волне. Наполненный свежестью, играющий цветочными и&nbsp;фруктовыми оттенками женский аромат дополняет мужская версия&nbsp;&mdash; с&nbsp;глубокими древесными оттенками, подчеркивающими его морское звучание. Произведение парфюмерного искусства пополнило коллекцию ароматов Kenzo, и&nbsp;охота за&nbsp;ним среди истинных ценителей водной стихии уже началась.</p>",
       "img": "build/img/art/end.jpg",
       "imgLabel": "build/img/art/label.jpg"
@@ -208,7 +202,7 @@
       }
     ],
     "end": {
-      "url": "#",
+      "url": "https://shop.rivegauche.ru/newstore/ru/%D0%A0%D0%98%D0%92-%D0%93%D0%9E%D0%A8/%D0%92%D1%81%D0%B5-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Kenzo/c/rg_brand_64/KenzoNav#rgshare=%3A%3Acategory%3AKenzoNav",
       "text": false,
       "img": "build/img/life/end.jpg",
       "imgLabel": "build/img/life/label.jpg"
@@ -270,7 +264,7 @@
       }
     ],
     "end": {
-      "url": "#",
+      "url": "https://shop.rivegauche.ru/newstore/ru/%D0%A0%D0%98%D0%92-%D0%93%D0%9E%D0%A8/%D0%92%D1%81%D0%B5-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Kenzo/c/rg_brand_64/KenzoNav#rgshare=%3A%3Acategory%3AKenzoNav",
       "text": false,
       "img": "build/img/fashion/end.jpg",
       "imgLabel": "build/img/fashion/label.jpg"
@@ -328,7 +322,7 @@
       }
     ],
     "end": {
-      "url": "#",
+      "url": "https://shop.rivegauche.ru/newstore/ru/%D0%A0%D0%98%D0%92-%D0%93%D0%9E%D0%A8/%D0%92%D1%81%D0%B5-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Kenzo/c/rg_brand_64/KenzoNav#rgshare=%3A%3Acategory%3AKenzoNav",
       "text": false,
       "img": "build/img/beauty/end.jpg",
       "imgLabel": "build/img/beauty/label.jpg"
@@ -386,7 +380,7 @@
       }
     ],
     "end": {
-      "url": "#",
+      "url": "https://shop.rivegauche.ru/newstore/ru/%D0%A0%D0%98%D0%92-%D0%93%D0%9E%D0%A8/%D0%92%D1%81%D0%B5-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Kenzo/c/rg_brand_64/KenzoNav#rgshare=%3A%3Acategory%3AKenzoNav",
       "text": false,
       "img": "build/img/sport/end.jpg",
       "imgLabel": "build/img/sport/label.jpg"
